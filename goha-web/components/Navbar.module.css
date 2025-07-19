@@ -1,0 +1,81 @@
+/* components/Navbar.module.css */
+
+.wrapper {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  padding: 5px 32px;
+  margin: 16px;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.35);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button a:hover {
+  color: #ffffff;
+}
+
+.logo {
+  height: 80px;
+  width: 80px;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  gap: 32px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #333333;
+  align-items: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #ff0000;
+}
+
+.button a{
+  text-decoration: none;
+  color: #d32f2f;
+  font-weight: 600;
+}
+
+
+
+.button {
+  border: 3px solid #ff0000;
+  color: #ff0000;
+  padding: 6px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+   background-color: #ff0000; /* Fondo rojo al pasar el mouse */
+  color: #ffffff;   
+}
+
+.menu a.button {
+  border: 4px solid #ff0000;
+  color: #ff0000;
+  background-color: transparent;
+  padding: 6px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.menu a.button:hover {
+  background-color: #ff0000;
+  color: #ffffff;
+}
