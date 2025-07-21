@@ -28,11 +28,13 @@
     cursor: pointer;
     padding: 0.5rem 1rem;
     font-size: 1rem;
-    transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .botonClaro:hover {
     border-color: red;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 0 0 red;
 }
 
 .botonClaro:active {
