@@ -1,11 +1,12 @@
 .wrapper {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  z-index: 0; /* detrás del navbar */
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
   pointer-events: none;
-  width: 100vw; /* Abarca el ancho visible */
-  height: auto;
+  overflow: hidden;
 }
 
 .barraSup {
@@ -13,7 +14,6 @@
   top: -50px;
   left: -35px;
   width: 350px;
-  opacity: 1;
 }
 
 .barraInf {
@@ -21,5 +21,4 @@
   top: 25px;
   left: -15px;
   width: 350px;
-  opacity: 1;
 }

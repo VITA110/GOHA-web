@@ -1,16 +1,22 @@
 import BarrasDecorativas from '@/components/BarrasDecorativas';
 import Navbar from '@/components/Navbar';
-import HeroSection from '@/components/HeroSection';
 import SloganSection from '@/components/SloganSection';
+import FraseAccion from '@/components/FraseAccion';
 
 export default function Home() {
   return (
-    <div style={{ position: 'relative', overflow: 'hidden' }}>
-      <BarrasDecorativas />
-      <Navbar />
-      <main>
-        {<SloganSection />}
-      </main>
-    </div>
+    <>
+      <BarrasDecorativas /> 
+
+      <div> {/* sin position: relative ni overflow: hidden */}
+        <Navbar />
+        <main>
+          <SloganSection />
+          <FraseAccion />
+
+          
+        </main>
+      </div>
+    </>
   );
 }

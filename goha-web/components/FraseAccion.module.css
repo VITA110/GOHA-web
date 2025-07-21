@@ -1,0 +1,63 @@
+.container {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.texto {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-inline: auto;
+    line-height: 1.6;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.botonClaro {
+    background: none;
+    border: none;
+    border-bottom: 2px solid black;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.botonClaro:hover {
+    border-color: red;
+}
+
+.botonClaro:active {
+    transform: scale(0.95);
+}
+
+.botonOscuro {
+    background: black;
+    color: white;
+    font-weight: 700;
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.botonOscuro:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+    /* border: 2px solid black; */
+}
+
+.botonOscuro:active {
+    transform: scale(0.95);
+}

@@ -21,5 +21,3 @@ export default function BarrasDecorativas() {
     </div>
   );
 }
-// goha-web/components/barrasDecorativas.jsx
-// Este componente muestra dos barras decorativas en la parte superior de la página

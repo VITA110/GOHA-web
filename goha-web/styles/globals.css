@@ -1,16 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-/* En styles/globals.css */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 
-/* Personalización opcional */
 body {
-  /* If you use @apply, make sure Tailwind is set up correctly */
-  /* Otherwise, use standard CSS properties: */
   background-color: #fff;
-  color: #2d3748; /* Equivalent to text-gray-800 */
+  color: #000000; 
   font-family: 'Poppins', sans-serif;
   
 }
