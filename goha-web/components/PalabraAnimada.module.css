@@ -1,0 +1,21 @@
+.palabra {
+  display: inline-block;
+  width: 8ch; /* Reservamos un ancho fijo con 8 caracteres */
+  text-align: left;
+  color: #ff0000;
+  font-weight: 800;
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+  animation: aparecer 0.4s ease-in-out;
+}
+
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

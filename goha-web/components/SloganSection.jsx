@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import styles from './SloganSection.module.css';
+import PalabraAnimada from './PalabraAnimada';
 
 export default function SloganSection() {
   return (
@@ -14,8 +15,9 @@ export default function SloganSection() {
       </div>
 
       <div className={styles.texto}>
-        <span className={styles.frase}>Soluciones que *Conectan*</span>
-        {/* Aquí irá el texto animado después */}
+        <h1 className={styles.frase}>
+          Soluciones que <PalabraAnimada />
+        </h1>
       </div>
     </section>
   );
