@@ -1,0 +1,25 @@
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0; /* detrás del navbar */
+  pointer-events: none;
+  width: 100vw; /* Abarca el ancho visible */
+  height: auto;
+}
+
+.barraSup {
+  position: absolute;
+  top: -50px;
+  left: -35px;
+  width: 350px;
+  opacity: 1;
+}
+
+.barraInf {
+  position: absolute;
+  top: 25px;
+  left: -15px;
+  width: 350px;
+  opacity: 1;
+}
