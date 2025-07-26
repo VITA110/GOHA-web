@@ -3,6 +3,8 @@ import BarrasDecorativas from '@/components/BarrasDecorativas';
 import Navbar from '@/components/Navbar';
 import SloganSection from '@/components/SloganSection';
 import FraseAccion from '@/components/FraseAccion';
+import CarruselEmpresas from '@/components/CarruselEmpresas';
+import ProductosServicios from '@/components/ProductosServicios';
 
 export default function Home() {
   const sloganRef = useRef(null);
@@ -37,7 +39,9 @@ export default function Home() {
           <SloganSection />
         </div>
         <FraseAccion />
-        <div style={{ height: '100vh', background: '#bfbfbfff' }} />
+        <CarruselEmpresas />
+        <ProductosServicios />  
+        {/* <div style={{ height: '100vh', background: '#bfbfbfff' }} /> */}
 
       </main>
     </>

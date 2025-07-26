@@ -7,7 +7,7 @@
   position: relative;
   z-index: 1;
   padding-bottom: 1rem;
-  padding-top: 5rem;
+  padding-top: 10rem;
 }
 
 .logo {
@@ -21,6 +21,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.5));
 }
 
 .frase {

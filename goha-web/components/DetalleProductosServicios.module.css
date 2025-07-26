@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 100px;
+  gap: 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.columnaTexto {
+  flex: 1;
+  text-align: left;
+}
+
+.titulo {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.descripcion {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  max-width: 500px;
+}
+
+.columnaImagen {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.imagen {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
