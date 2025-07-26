@@ -15,9 +15,9 @@ export default function DetalleProductosServicios() {
       </div>
       <div className={styles.columnaImagen}>
         <Image
-          src="/imagenes/hardware-ejemplo.png"
-          alt="Imagen ilustrativa"
-          width={400}
+          src="/imagenes/hardware-ejemplo.jpg"
+          alt="Imagen ilustrativa by StockSnap from Pixabay"
+          width={700}
           height={300}
           className={styles.imagen}
         />
