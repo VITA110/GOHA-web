@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import styles from './DetalleProductosServicios.module.css';
 import Image from 'next/image';
 
@@ -52,68 +52,125 @@ const productos = [
     imagen: '/imagenes/senalizacion-ejemplo.jpg',
     icono: '/iconsPS/senalizacion.svg',
   },
-  // ... más objetos si lo deseas
+  // ... más objetos si lo deseas{{{{{{{{{{sssss
+  // }}}}}}}}}}
 ];
 
-
 export default function DetalleProductosServicios() {
-  const refs = useRef([]);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [itemVisibility, setItemVisibility] = useState(
+    productos.map(() => ({ ratio: 0, blur: 1 }))
+  );
+  const itemRefs = useRef([]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add(styles.animado);
+      (entries) => {
+        const newVisibility = [...itemVisibility];
+        let mostVisible = null;
+        let maxRatio = 0;
+        
+        entries.forEach((entry) => {
+          const index = Number(entry.target.dataset.index);
+          const ratio = entry.intersectionRatio;
+          
+          // Calcular blur basado en qué tan visible está el elemento
+          // Valores: 0 = completamente borroso, 1 = completamente nítido
+          let blurAmount;
+          if (ratio > 0.6) {
+            blurAmount = 0; // Completamente nítido
+          } else if (ratio > 0.3) {
+            blurAmount = (0.6 - ratio) * 10; // Blur gradual
+          } else {
+            blurAmount = 3; // Máximo blur
+          }
+          
+          newVisibility[index] = { ratio, blur: blurAmount };
+          
+          if (entry.isIntersecting && ratio > maxRatio) {
+            maxRatio = ratio;
+            mostVisible = entry;
           }
         });
+
+        setItemVisibility(newVisibility);
+
+        if (mostVisible) {
+          const newIndex = Number(mostVisible.target.dataset.index);
+          setActiveIndex(newIndex);
+        }
       },
-      { threshold: 0.1 }
+      { 
+        threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
+        rootMargin: '-10% 0px -10% 0px'
+      }
     );
 
-    refs.current.forEach(el => {
-      if (el) observer.observe(el);
+    // Asegurar que todas las referencias estén disponibles
+    const currentRefs = itemRefs.current.filter(ref => ref !== null);
+    
+    currentRefs.forEach((ref) => {
+      observer.observe(ref);
     });
 
     return () => {
-      refs.current.forEach(el => {
-        if (el) observer.unobserve(el);
+      currentRefs.forEach((ref) => {
+        observer.unobserve(ref);
       });
     };
-  }, []);
+  }, [itemVisibility]);
 
   return (
-    <div className={styles.container}>
-      {productos.map((producto, index) => (
-        <div key={index} className={styles.item}>
-          <div className={styles.columnaTexto}>
-            <div className={styles.iconoTitulo}>
-              <Image
-                src={producto.icono}
-                alt={`Ícono de ${producto.titulo}`}
-                width={36}
-                height={36}
-                className={styles.icono}
-              />
-              <h3 className={styles.titulo}>{producto.titulo}</h3>
-            </div>
-            <p className={styles.descripcion}>{producto.descripcion}</p>
-          </div>
-
+    <div className={styles.wrapper}>
+      <div className={styles.columnaTexto}>
+        {productos.map((producto, index) => (
           <div
-            className={styles.columnaImagen}
-            ref={el => (refs.current[index] = el)}
+            key={`${producto.titulo}-${index}`}
+            className={styles.itemTexto}
+            data-index={index}
+            ref={(el) => {
+              itemRefs.current[index] = el;
+            }}
+            style={{
+              filter: `blur(${itemVisibility[index]?.blur || 0}px)`,
+              opacity: itemVisibility[index]?.blur > 2 ? 0.6 : 1,
+              transform: `scale(${itemVisibility[index]?.blur > 2 ? 0.98 : 1})`,
+            }}
           >
-            <Image
-              src={producto.imagen}
-              alt={`Imagen de ${producto.titulo}`}
-              width={700}
-              height={300}
-              className={styles.imagen}
-            />
+            <div className={styles.iconoTitulo}>
+              <Image 
+                src={producto.icono} 
+                alt="" 
+                width={40} 
+                height={40}
+                style={{ flexShrink: 0 }}
+              />
+              <h3>{producto.titulo}</h3>
+            </div>
+            <p>{producto.descripcion}</p>
           </div>
+        ))}
+      </div>
+
+      <div className={styles.columnaImagen}>
+        <div className={styles.imagenesContainer}>
+          {productos.map((producto, index) => (
+            <Image
+              key={`imagen-${producto.titulo}-${index}`}
+              src={producto.imagen}
+              alt={producto.titulo}
+              width={500}
+              height={300}
+              className={`${styles.imagen} ${
+                index === activeIndex ? styles.visible : styles.oculta
+              }`}
+              style={{
+                objectFit: 'cover'
+              }}
+            />
+          ))}
         </div>
-      ))}
+      </div>
     </div>
   );
 }

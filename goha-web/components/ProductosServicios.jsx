@@ -43,13 +43,19 @@ export default function ProductosServicios() {
                         </div>
                     ))}
                 </div>
-                <DetalleProductosServicios />
+                <div className={styles.contenido}>
+                    {/* Tu contenido actual aquí (títulos, etc.) */}
+
+                    {/* El componente de detalle */}
+                    <DetalleProductosServicios />
+                </div>
+                {/* <DetalleProductosServicios /> */}
                 {/* <DetalleProductosServiciosAnimado /> */}
 
 
-            
+
             </div>
-            
+
         </section>
     );
 }
