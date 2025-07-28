@@ -7,6 +7,7 @@
 
 .fondoWrapper {
     position: relative;
+    opacity: 0.5;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -15,7 +16,11 @@
 
 .fondo {
     width: 100%;
+    min-height: 4000px;
+    /* Puedes ajustar este valor */
+    object-fit: cover;
     max-width: 100%;
+
     height: auto;
     display: block;
 }
@@ -36,35 +41,36 @@
 }
 
 .titulo {
-  font-size: 28px;
-  font-weight: 900;
-  margin-bottom: 48px;
-  line-height: 1.4;
-  text-align: center;
-  color: #000000;
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 48px;
+    line-height: 1.4;
+    text-align: center;
+    color: #000000;
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 15px; 
-  justify-content: center;
-  align-items: center;
-  width: 72rem;
-  /* max-width: 1000px; */
-  margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 72rem;
+    padding-bottom: 5rem;
+    /* max-width: 1000px; */
+    margin: 0 auto;
 }
 
 .item {
-  display: flex;
-  width: 100%  ;
-  align-items: center;
-  gap: 5px;
-  justify-content: center;
-  font-weight: 600;
-  font-size: 16px;
-  padding: 1rem;
-  color: #000000;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 1rem;
+    color: #000000;
 }
 
 

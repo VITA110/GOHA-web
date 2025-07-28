@@ -1,6 +1,4 @@
-'use client';
-import { useEffect, useRef } from 'react';
-import styles from './DetalleProductosServicios.module.css';
+import styles from './DetalleProductosServiciosAnimado.module.css';
 import Image from 'next/image';
 
 const productos = [
@@ -56,64 +54,41 @@ const productos = [
 ];
 
 
-export default function DetalleProductosServicios() {
-  const refs = useRef([]);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add(styles.animado);
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    refs.current.forEach(el => {
-      if (el) observer.observe(el);
-    });
-
-    return () => {
-      refs.current.forEach(el => {
-        if (el) observer.unobserve(el);
-      });
-    };
-  }, []);
-
+export default function DetalleProductosServiciosAnimado() {
   return (
-    <div className={styles.container}>
-      {productos.map((producto, index) => (
-        <div key={index} className={styles.item}>
-          <div className={styles.columnaTexto}>
-            <div className={styles.iconoTitulo}>
+    <div className={styles.wrapper}>
+      <div className={styles.textos}>
+        {productos.map((producto) => (
+          <a key={producto.id} href={`#${producto.id}`} className={styles.link}>
+            <div className={styles.itemTexto}>
               <Image
                 src={producto.icono}
-                alt={`Ícono de ${producto.titulo}`}
-                width={36}
-                height={36}
-                className={styles.icono}
+                alt={producto.titulo}
+                width={28}
+                height={28}
               />
-              <h3 className={styles.titulo}>{producto.titulo}</h3>
+              <div>
+                <h3>{producto.titulo}</h3>
+                <p>{producto.descripcion}</p>
+              </div>
             </div>
-            <p className={styles.descripcion}>{producto.descripcion}</p>
-          </div>
+          </a>
+        ))}
+      </div>
 
-          <div
-            className={styles.columnaImagen}
-            ref={el => (refs.current[index] = el)}
-          >
+      <div className={styles.imagenes}>
+        {productos.map((producto) => (
+          <div id={producto.id} key={producto.id} className={styles.itemImagen}>
             <Image
               src={producto.imagen}
-              alt={`Imagen de ${producto.titulo}`}
+              alt={producto.titulo}
               width={700}
-              height={300}
+              height={400}
               className={styles.imagen}
             />
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }

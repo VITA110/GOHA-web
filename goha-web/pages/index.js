@@ -5,6 +5,7 @@ import SloganSection from '@/components/SloganSection';
 import FraseAccion from '@/components/FraseAccion';
 import CarruselEmpresas from '@/components/CarruselEmpresas';
 import ProductosServicios from '@/components/ProductosServicios';
+import DetalleProductosServicios from '@/components/DetalleProductosServicios';
 
 export default function Home() {
   const sloganRef = useRef(null);
@@ -41,7 +42,7 @@ export default function Home() {
         <FraseAccion />
         <CarruselEmpresas />
         <ProductosServicios />  
-        {/* <div style={{ height: '100vh', background: '#bfbfbfff' }} /> */}
+        <div style={{ height: '100vh', background: '#736d6d' }} />
 
       </main>
     </>

@@ -1,6 +1,8 @@
 import styles from './ProductosServicios.module.css';
 import DetalleProductosServicios from './DetalleProductosServicios';
+
 import Image from 'next/image';
+import DetalleProductosServiciosAnimado from './DetalleProductosServiciosAnimado';
 
 const servicios = [
     { icono: 'iconsPS/hardware.svg', texto: 'Hardware empresarial' },
@@ -21,7 +23,7 @@ export default function ProductosServicios() {
                     src="/FondoPS.svg"
                     alt="Fondo Productos y Servicios"
                     width={1440}
-                    height={1930}
+                    height={0}
                     className={styles.fondo}
                     priority
                 />
@@ -42,7 +44,7 @@ export default function ProductosServicios() {
                     ))}
                 </div>
                 <DetalleProductosServicios />
-                
+                {/* <DetalleProductosServiciosAnimado /> */}
 
 
             
