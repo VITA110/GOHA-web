@@ -1,0 +1,50 @@
+.seccion {
+  padding: 60px 30px; /* ESPACIO LATERAL: Aumentado a 30px para dar más respiro a los costados */
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.titulo {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  color: #111111;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* ANCHO MÍNIMO: Vuelto a 300px para evitar sobreposición */
+  gap: 60px; /* SEPARACIÓN ENTRE TARJETAS: Aumentado a 30px para mejor espaciado */
+  justify-items: center;
+  align-items: center;
+  max-width: 1100px; /* ANCHO MÁXIMO: Ajustado a 1150px para balance */
+  margin: 0 auto;
+  padding: 0 20px; /* PADDING INTERNO: Aumentado a 20px para más espacio interno */
+}
+
+.tarjeta {
+  background: linear-gradient(to bottom, #e0e0e0, #87b1d9);
+  border-radius: 12px;
+  box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.5);
+  padding: 40px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+  width: 100%;
+  overflow: hidden; /* CONTENCIÓN: Evita que contenido se salga de la tarjeta */
+  box-sizing: border-box; /* CAJA: Incluye padding y border en el tamaño total */
+}
+
+.tarjeta:hover {
+  transform: translateY(-15px);
+}
+
+.logo {
+  max-width: 100%; /* LÍMITE DE ANCHO: No puede ser más ancho que su contenedor */
+  max-height: 120px; /* LÍMITE DE ALTURA: Controla la altura máxima del logo */
+  width: auto; /* ANCHO AUTOMÁTICO: Mantiene proporción */
+  height: auto; /* ALTURA AUTOMÁTICA: Mantiene proporción */
+  object-fit: contain; /* AJUSTE: Se ajusta sin deformarse dentro de los límites */
+  display: block; /* DISPLAY: Elimina espacios extra que pueden causar img */
+}

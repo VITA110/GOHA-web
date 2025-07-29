@@ -7,6 +7,8 @@ import CarruselEmpresas from '@/components/CarruselEmpresas';
 import ProductosServicios from '@/components/ProductosServicios';
 import DetalleProductosServicios from '@/components/DetalleProductosServicios';
 
+import Lideres from '@/components/Lideres';
+
 export default function Home() {
   const sloganRef = useRef(null);
   const [showNavbar, setShowNavbar] = useState(false);
@@ -41,8 +43,9 @@ export default function Home() {
         </div>
         <FraseAccion />
         <CarruselEmpresas />
-        <ProductosServicios />  
-        <div style={{ height: '100vh', background: '#736d6d' }} />
+        <ProductosServicios />
+        <div style={{ height: '25vh', background: '#ffffffff' }} />
+        <Lideres />  
 
       </main>
     </>

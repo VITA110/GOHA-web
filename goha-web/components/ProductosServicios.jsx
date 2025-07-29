@@ -44,15 +44,16 @@ export default function ProductosServicios() {
                     ))}
                 </div>
                 <div className={styles.contenido}>
-                    {/* Tu contenido actual aquí (títulos, etc.) */}
-
-                    {/* El componente de detalle */}
                     <DetalleProductosServicios />
                 </div>
-                {/* <DetalleProductosServicios /> */}
-                {/* <DetalleProductosServiciosAnimado /> */}
-
-
+                <div className={styles.divisionWrapper}>
+                    <Image
+                        src="/DivisionFrase.svg"
+                        alt="División decorativa"
+                        fill
+                        className={styles.divisionImage}
+                    />
+                </div>
 
             </div>
 
