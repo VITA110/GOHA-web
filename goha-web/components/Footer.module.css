@@ -1,0 +1,266 @@
+/* ALTERNATIVA: Logo relativo al footer pero sobre otros componentes */
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: visible;
+    /* Permite que el logo salga del contenedor */
+    background-color: #ffffff00;
+    z-index: 10;
+    /* Z-index alto para toda la sección footer */
+}
+
+.fondoSvgWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 1;
+}
+
+.fondoSvg {
+    width: 100%;
+    height: 400px;
+    /* Altura que quieres */
+    object-fit: cover;
+    /* Recorta manteniendo proporciones */
+    object-position: center top;
+    /* Muestra la parte superior */
+}
+
+.logoWrapper {
+    position: absolute;
+    top: -150px;
+    /* POSICIÓN: Ajusta para que salga del footer hacia arriba */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10000;
+    /* Z-INDEX MÁXIMO: Por encima de todo */
+    display: flex;
+    pointer-events: auto;
+}
+
+.logo {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    padding: 20px;
+    animation: levitation 3s ease-in-out infinite;
+
+}
+
+/* KEYFRAMES PARA LA ANIMACIÓN DE LEVITACIÓN */
+@keyframes levitation {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+        /* Posición inicial/final */
+    }
+
+    50% {
+        transform: translateY(-10px);
+        /* Punto más alto del movimiento */
+    }
+}
+
+.contenidoWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* 3 columnas iguales */
+    gap: 10px;
+    /* Espacio entre columnas */
+    width: 100%;
+    max-width: 1500px;
+    /* padding: 0 40px; */
+    /* Margen lateral */
+    z-index: 5;
+    /* Debajo del logo pero sobre el fondo */
+}
+
+.columna {
+    text-align: center;
+    color: #333333;
+    /* Ajusta según el color de tu SVG */
+}
+
+/* COLUMNAS LATERALES - Altura superior */
+.columna:first-child,
+.columna:last-child {
+    align-self: start;
+    /* Se alinean desde arriba */
+    padding-bottom: 2rem;
+    /* Espacio adicional arriba */
+    /* min-height: 200px; */
+    /* Altura mínima mayor */
+}
+
+.columna:first-child {
+    text-align: left;
+}
+
+.columna:first-child h3 {
+    padding-left: 1rem;
+    pointer-events: none;
+    /* Alineación de texto a la izquierda */
+}
+
+.columna:first-child li {
+    text-align: left;
+    padding-left: 1rem;
+    /* Alineación de texto a la izquierda */
+}
+
+.columna:last-child {
+    text-align: right;
+}
+
+.columna:last-child h3 {
+    padding-right: 1rem;
+    pointer-events: none;
+
+    /* Alineación de texto a la derecha */
+}
+
+.columna:last-child li {
+    text-align: right;
+    padding-right: 3rem;
+}
+
+/* COLUMNA CENTRAL - Altura normal */
+.columna:nth-child(2) {
+    align-self: center;
+    text-align: center;
+    padding-top: 6rem;
+
+    min-height: -100px;
+}
+
+.columna:nth-child(2) h3{
+    pointer-events: none;
+    margin-bottom: 25px;
+}
+
+.columna:nth-child(2) li {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.columna:nth-child(2) ul {
+    padding: 0;
+}
+
+.tituloColumna {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+/* SUBTÍTULO PARA COLUMNAS CON MÁS CONTENIDO */
+.subtituloColumna {
+    
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 22px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.listaColumna {
+    list-style: none;
+    text-align: left;
+    margin: 0;
+}
+
+.listaColumna li {
+    margin-bottom: 45px;
+    font-size: 14px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+.listaColumna ul {
+    padding: 16px;
+}
+
+
+.listaColumna li:hover {
+    color: #000000;
+    font-weight: 600;
+}
+
+/* === COPYRIGHT === */
+.copyrightWrapper {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    width: 100%;
+    text-align: center;
+}
+
+.copyright {
+    font-size: 15px;
+    margin: 0;
+    padding: 0 20px;
+    border-radius: 15px;
+    padding: 8px 20px;
+    display: inline-block;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    .contenidoWrapper {
+        grid-template-columns: 1fr;
+        /* Una sola columna en móvil */
+        gap: 30px;
+        padding: 0 20px;
+        max-width: 300px;
+    }
+
+    .footer {
+        height: 500px;
+        /* Más altura para acomodar el contenido vertical */
+    }
+
+    .tituloColumna {
+        font-size: 16px;
+    }
+
+    .listaColumna li {
+        font-size: 13px;
+    }
+
+    .copyright {
+        font-size: 11px;
+        padding: 6px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenidoWrapper {
+        padding: 0 15px;
+    }
+
+    .copyright {
+        font-size: 10px;
+        padding: 5px 12px;
+    }
+}

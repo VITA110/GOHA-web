@@ -7,6 +7,7 @@ import CarruselEmpresas from '@/components/CarruselEmpresas';
 import ProductosServicios from '@/components/ProductosServicios';
 import Lideres from '@/components/Lideres';
 import FraseFinal from '@/components/FraseFinal';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   const sloganRef = useRef(null);
@@ -46,6 +47,7 @@ export default function Home() {
         <div style={{ height: '25vh', background: '#ffffffff' }} />
         <Lideres />  
         <FraseFinal />
+        <Footer />
       </main>
     </>
   );
