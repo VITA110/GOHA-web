@@ -1,0 +1,29 @@
+/* Contacto.module.css */
+.contactoPage {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: white; /* Fondo siempre blanco */
+}
+
+.contactoMain {
+  padding-top: 130px; /* Espacio para que no se empalme con el navbar */
+  min-height: calc(100vh - 130px);
+  width: 100%;
+  background-color: white; /* Fondo siempre blanco */
+}
+
+/* Responsivo para diferentes tamaños de navbar */
+@media (max-width: 768px) {
+  .contactoMain {
+    padding-top: 70px;
+    min-height: calc(100vh - 70px);
+  }
+}
+
+@media (max-width: 480px) {
+  .contactoMain {
+    padding-top: 60px;
+    min-height: calc(100vh - 60px);
+  }
+}

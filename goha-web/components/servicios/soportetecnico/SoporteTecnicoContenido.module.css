@@ -1,0 +1,87 @@
+/* SoporteTecnicoContenido.module.css */
+.soporteTecnicoContenido {
+  min-height: 100vh;
+  background-color: white; /* Fondo siempre blanco */
+}
+
+.contenidoContainer {
+  max-width: 1300px;
+  margin: 0 auto;
+  background-color: white; /* Fondo siempre blanco */
+}
+
+.contenidoGrid{
+  background-color: white; /* Fondo siempre blanco */
+}
+
+.contenidoHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contenidoTitulo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contenidoGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.contenidoImagenes,
+.contenidoFormulario {
+  width: 100%;
+}
+
+/* Layout desktop */
+@media (min-width: 1024px) {
+  .contenidoGrid {
+    grid-template-columns: 33% 67%; /* Más espacio para el formulario */
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .soporteTecnicoContenido {
+    padding: 1.5rem;
+  }
+}
+
+/* Responsivo tablet */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .soporteTecnicoContenido {
+    padding: 1rem;
+  }
+  
+  .contenidoTitulo {
+    font-size: 2rem;
+  }
+  
+  .contenidoHeader {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Responsivo móvil */
+@media (max-width: 767px) {
+  .soporteTecnicoContenido {
+    padding: 0.5rem;
+  }
+  
+  .contenidoTitulo {
+    font-size: 1.75rem;
+  }
+  
+  .contenidoHeader {
+    margin-bottom: 1.5rem;
+  }
+  
+  .contenidoGrid {
+    gap: 1rem;
+  }
+}
