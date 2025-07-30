@@ -1,0 +1,31 @@
+.seccion {
+  padding: 160px 0;
+  overflow: hidden;
+  background-color: #ffffff;
+  text-align: center;
+  
+}
+
+.frase {
+  font-size: 32px;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.frase:hover {
+  color: #ff0000; /* Rojo institucional */
+  transform: scale(1.1);
+cursor: default;
+}
+
+
+.decoracion {
+  width: 600px;
+  height: 4px;
+  background-color: #000000; /* Rojo institucional */
+  margin: 0 auto;
+  border-radius: 2px;
+}
+

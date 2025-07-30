@@ -5,9 +5,8 @@ import SloganSection from '@/components/SloganSection';
 import FraseAccion from '@/components/FraseAccion';
 import CarruselEmpresas from '@/components/CarruselEmpresas';
 import ProductosServicios from '@/components/ProductosServicios';
-import DetalleProductosServicios from '@/components/DetalleProductosServicios';
-
 import Lideres from '@/components/Lideres';
+import FraseFinal from '@/components/FraseFinal';
 
 export default function Home() {
   const sloganRef = useRef(null);
@@ -46,7 +45,7 @@ export default function Home() {
         <ProductosServicios />
         <div style={{ height: '25vh', background: '#ffffffff' }} />
         <Lideres />  
-
+        <FraseFinal />
       </main>
     </>
   );
