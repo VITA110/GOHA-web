@@ -18,7 +18,7 @@ export default function Navbar({ visible }) {
       <nav className={styles.menu}>
         <Link href="/nosotros">Nosotros</Link>
         <Link href="/servicios">Servicios</Link>
-        <Link href="/ubicaciones">Ubicaciones</Link>
+        <Link href="/#ubi">Ubicaciones</Link>
         <Link href="/contacto" legacyBehavior>
           <a className={styles.button}>Contáctanos</a>
         </Link>

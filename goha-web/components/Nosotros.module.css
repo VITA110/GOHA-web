@@ -1,0 +1,380 @@
+/* === BANNER DECORATIVO === */
+.bannerWrapper {
+    width: 100%;
+  height: 120px; /* Ajusta a la altura del SVG */
+  background-image: url('/barra.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.bannerSVG {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* === CONTAINER PRINCIPAL === */
+.mainContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-bottom: 5rem;
+  position: relative;
+}
+
+/* === ENCABEZADO === */
+.headerSection {
+  text-align: center;
+  padding: 1px 0 60px;
+  /* background: linear-gradient(135deg, rgba(217, 135, 135, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%); */
+  border-radius: 20px;
+  margin: 0 0 80px;
+}
+
+.pageTitle h1 {
+     color: #ffffff !important;
+
+}
+
+.pageTitle {
+  font-size: 48px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 20px;
+  /* background: linear-gradient(135deg, #000000 0%, #ffffff 100%); */
+     text-shadow: 7px 7px 5px rgba(0,0,0,0.5);
+/* 
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  background-clip: text;
+}
+
+.pageSubtitle {
+  font-size: 20px;
+  color: #000000;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+/* === CONTENIDO WRAPPER === */
+.contenidoWrapper {
+  margin-bottom: 100px;
+}
+
+/* === SECCIONES DE CONTENIDO === */
+.seccionContenido {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  margin-bottom: 120px;
+  position: relative;
+}
+
+/* === LAYOUTS ALTERNADOS === */
+.imagenIzquierda {
+  grid-template-areas: "imagen texto";
+}
+
+.imagenDerecha {
+  grid-template-areas: "texto imagen";
+}
+
+.imagenIzquierda .columnaImagen {
+  grid-area: imagen;
+}
+
+.imagenIzquierda .columnaTexto {
+  grid-area: texto;
+}
+
+.imagenDerecha .columnaImagen {
+  grid-area: imagen;
+}
+
+.imagenDerecha .columnaTexto {
+  grid-area: texto;
+}
+
+/* === COLUMNA DE IMAGEN === */
+.columnaImagen {
+  position: relative;
+}
+
+.imagenContainer {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  transform: perspective(1000px) rotateY(0deg);
+  transition: all 0.3s ease;
+}
+
+.imagenContainer:hover {
+  transform: perspective(1000px) rotateY(-5deg) scale(1.02);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+}
+
+.imagenDerecha .imagenContainer:hover {
+  transform: perspective(1000px) rotateY(5deg) scale(1.02);
+}
+
+.imagen {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.imagenOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(135, 177, 217, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.imagenContainer:hover .imagenOverlay {
+  opacity: 1;
+}
+
+/* === COLUMNA DE TEXTO === */
+.columnaTexto {
+  position: relative;
+  padding: 40px 0;
+}
+
+.textoContainer {
+  position: relative;
+  z-index: 2;
+}
+
+.tituloSeccion {
+  font-size: 36px;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  position: relative;
+}
+
+.separador {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #87b1d9 0%, #6c9bd1 100%);
+  border-radius: 2px;
+  margin-bottom: 30px;
+}
+
+.textoSeccion {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #444444;
+  font-weight: 400;
+  margin-bottom: 0;
+  text-align: justify;
+}
+
+/* === NÚMERO DECORATIVO === */
+.numeroSeccion {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  font-size: 120px;
+  font-weight: 900;
+  color: rgba(135, 177, 217, 0.1);
+  z-index: 1;
+  user-select: none;
+  pointer-events: none;
+}
+
+.imagenIzquierda .numeroSeccion {
+  right: auto;
+  left: -40px;
+}
+
+/* === SECCIÓN ESTADÍSTICAS === */
+.estadisticasSection {
+  background: linear-gradient(135deg, #2495ff 0%, #ff1010 100%);
+  border-radius: 25px; ;
+  padding: 60px 40px;
+  margin: 80px 0 100px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.estadisticasGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  text-align: center;
+}
+
+.estadistica {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.numero {
+  font-size: 42px;
+  font-weight: 800;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.label {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 1024px) {
+  .seccionContenido {
+    gap: 60px;
+    margin-bottom: 100px;
+  }
+
+  .tituloSeccion {
+    font-size: 32px;
+  }
+
+  .textoSeccion {
+    font-size: 17px;
+  }
+
+  .numeroSeccion {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainContainer {
+    padding: 0 15px;
+  }
+
+  .headerSection {
+    padding: 60px 30px 40px;
+    margin: 20px 0 60px;
+  }
+
+  .pageTitle {
+    font-size: 36px;
+    color: #000000;
+  }
+
+  .pageSubtitle {
+    font-size: 18px;
+  }
+
+  .seccionContenido {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 80px;
+  }
+
+  .imagenIzquierda,
+  .imagenDerecha {
+    grid-template-areas: 
+      "imagen"
+      "texto";
+  }
+
+  .imagenContainer {
+    transform: none !important;
+  }
+
+  .imagenContainer:hover {
+    transform: scale(1.02) !important;
+  }
+
+  .imagen {
+    height: 300px;
+  }
+
+  .tituloSeccion {
+    font-size: 28px;
+  }
+
+  .textoSeccion {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .numeroSeccion {
+    font-size: 80px;
+    right: 0;
+    left: auto;
+  }
+
+  .estadisticasGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .estadisticasSection {
+    padding: 40px 20px;
+    border-radius: 20px;
+  }
+
+  .numero {
+    font-size: 36px;
+  }
+
+  .label {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .headerSection {
+    padding: 40px 20px 30px;
+    border-radius: 15px;
+  }
+
+  .pageTitle {
+    font-size: 28px;
+  }
+
+  .pageSubtitle {
+    font-size: 16px;
+  }
+
+  .seccionContenido {
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+
+  .tituloSeccion {
+    font-size: 24px;
+  }
+
+  .textoSeccion {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .numeroSeccion {
+    font-size: 60px;
+  }
+
+  .estadisticasGrid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .estadisticasSection {
+    padding: 30px 15px;
+    margin: 60px 0 80px;
+  }
+}

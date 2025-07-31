@@ -8,6 +8,7 @@ import ProductosServicios from '@/components/ProductosServicios';
 import Lideres from '@/components/Lideres';
 import FraseFinal from '@/components/FraseFinal';
 import Footer from '@/components/Footer';
+import Ubicaciones from '@/components/ubicaciones';
 
 export default function Home() {
   const sloganRef = useRef(null);
@@ -45,7 +46,13 @@ export default function Home() {
         <CarruselEmpresas />
         <ProductosServicios />
         <div style={{ height: '25vh', background: '#ffffffff' }} />
-        <Lideres />  
+        <Lideres />
+        <div style={{ height: '25vh', background: '#ffffffff' }} />
+        <section id="ubi" >
+          {<Ubicaciones />}
+        </section>
+
+
         <FraseFinal />
         <Footer />
       </main>
