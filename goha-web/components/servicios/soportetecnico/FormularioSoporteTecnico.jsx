@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './FormularioSoporteTecnico.module.css';
+import CuadroFlotanteSoporte from './CuadroFlotanteSoporte';
 
 export default function FormularioSoporteTecnico({ 
   titulo = "Soporte Técnico", 
@@ -17,6 +18,7 @@ export default function FormularioSoporteTecnico({
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showTooltip, setShowTooltip] = useState(false);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -53,14 +55,29 @@ export default function FormularioSoporteTecnico({
     }
   };
 
+  const toggleTooltip = () => {
+    setShowTooltip(!showTooltip);
+  };
+
+  const closeTooltip = () => {
+    setShowTooltip(false);
+  };
+
   return (
     <div className={`${styles.formularioSoporteTecnico} ${className}`}>
       <div className={styles.formularioContainer}>
         <div className={styles.formularioHeader}>
           <h2 className={styles.formularioTitulo}>
             {titulo}
-            <div className={styles.tituloIcono}>
-              <span>{icono}</span>
+            <div className={styles.tituloIconoContainer}>
+              <button 
+                type="button"
+                className={styles.tituloIcono}
+                onClick={toggleTooltip}
+                aria-label="Mostrar instrucciones de soporte"
+              >
+                <span>{icono}</span>
+              </button>
             </div>
           </h2>
         </div>
@@ -205,6 +222,12 @@ export default function FormularioSoporteTecnico({
           </button>
         </form>
       </div>
+
+      {/* Cuadro flotante separado */}
+      <CuadroFlotanteSoporte 
+        isVisible={showTooltip}
+        onClose={closeTooltip}
+      />
     </div>
   );
 }

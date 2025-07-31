@@ -26,15 +26,6 @@ export default function ContactoContenido() {
   return (
     <div className={styles.contactoContenido}>
       <div className={styles.contenidoContainer}>
-
-        <div className={styles.contenidoGrid}>
-          {/* Galería de Imágenes */}
-          <div className={styles.contenidoImagenes}>
-            <SeccionImagen 
-              images={images}
-            />
-          </div>
-
           {/* Formulario de Soporte Técnico */}
           <div className={styles.contenidoFormulario}>
             <FormularioContacto 
@@ -43,7 +34,6 @@ export default function ContactoContenido() {
               onSubmit={handleFormSubmit}
             />
           </div>
-        </div>
 
         {/* Nota informativa centrada debajo de todo */}
         <NotaInformativa />
