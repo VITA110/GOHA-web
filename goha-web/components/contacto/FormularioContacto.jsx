@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './FormularioContacto.module.css';
+import CuadroFlotanteContacto from './CuadroFlotanteContacto';
 
 export default function FormularioContacto({ 
   titulo = "Contactanos", 
@@ -56,6 +57,10 @@ export default function FormularioContacto({
     setShowTooltip(!showTooltip);
   };
 
+  const closeTooltip = () => {
+    setShowTooltip(false);
+  };
+
   return (
     <div className={`${styles.formularioSoporte} ${className}`}>
       <div className={styles.formularioContainer}>
@@ -71,35 +76,6 @@ export default function FormularioContacto({
               >
                 <span>{icono}</span>
               </button>
-              
-              {/* Cuadro de texto flotante */}
-              {showTooltip && (
-                <div className={styles.tooltipContainer}>
-                  <div className={styles.tooltip}>
-                    <div className={styles.tooltipHeader}>
-                      <h3>¿Necesitas ayuda?</h3>
-                      <button 
-                        type="button"
-                        className={styles.tooltipCloseBtn}
-                        onClick={toggleTooltip}
-                        aria-label="Cerrar ayuda"
-                      >
-                        ×
-                      </button>
-                    </div>
-                    <div className={styles.tooltipContent}>
-                      <p>Completa este formulario para contactarnos. Te responderemos lo antes posible.</p>
-                      <ul>
-                        <li><strong>Nombre de empresa:</strong> Ingresa el nombre de tu compañía</li>
-                        <li><strong>Correo:</strong> Tu email de contacto</li>
-                        <li><strong>Teléfono:</strong> Número donde podemos contactarte</li>
-                        <li><strong>Motivo:</strong> Razón de tu consulta</li>
-                        <li><strong>Descripción:</strong> Detalla tu problema o consulta</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              )}
             </div>
           </h2>
         </div>
@@ -212,6 +188,12 @@ export default function FormularioContacto({
           </button>
         </form>
       </div>
+
+      {/* Cuadro flotante separado */}
+      <CuadroFlotanteContacto 
+        isVisible={showTooltip}
+        onClose={closeTooltip}
+      />
     </div>
   );
 }
