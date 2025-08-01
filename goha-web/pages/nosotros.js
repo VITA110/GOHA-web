@@ -4,20 +4,21 @@ import Image from 'next/image';
 import styles from '../components/Nosotros.module.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Valores from '@/components/Valores';
 
 const contenidoSecciones = [
   {
     id: 1,
     titulo: "Nuestra Historia",
-    texto: "Desde 2015, GOHA Networks ha sido pionero en soluciones tecnológicas empresariales en Chihuahua. Comenzamos como una pequeña empresa familiar con la visión de democratizar el acceso a tecnología de vanguardia para empresas de todos los tamaños. A lo largo de los años, hemos crecido orgánicamente, siempre manteniendo nuestros valores fundamentales de calidad, servicio personalizado e innovación constante.",
+    texto: "GOHA NETWORKS S. DE R.L. DE C.V. es una empresa mexicana especializada en ofrecer soluciones tecnológicas integrales para la industria y los negocios. Nos enfocamos en proporcionar productos y servicios que optimizan los procesos operativos de nuestros clientes, ayudándoles a aumentar su productividad, reducir costos y adaptarse a los desafíos tecnológicos del entorno actual. Con una sólida trayectoria en el sector, trabajamos principalmente con empresas del ámbito industrial y maquilador, brindando soporte confiable y soluciones personalizadas en hardware, software, impresión, redes, señalización digital y más.",
     imagen: "/assets/nosotros/historia.jpg",
     posicion: "derecha" // imagen a la derecha, texto a la izquierda
   },
   {
-    id: 2, 
+    id: 2,
     titulo: "Nuestra Misión",
     texto: "Empoderar a las empresas mexicanas con soluciones tecnológicas integrales que impulsen su crecimiento y competitividad. Nos especializamos en hardware empresarial, software especializado, y servicios de consultoría que transforman los desafíos tecnológicos en oportunidades de negocio. Creemos que la tecnología debe ser accesible, confiable y orientada a resultados tangibles.",
-    imagen: "/assets/nosotros/mision.jpg", 
+    imagen: "/assets/nosotros/mision.jpg",
     posicion: "izquierda" // imagen a la izquierda, texto a la derecha
   },
   {
@@ -37,7 +38,7 @@ export default function Nosotros() {
         <meta name="description" content="Conoce más sobre GOHA Networks, nuestra historia, misión, visión y valores. Líder en soluciones tecnológicas empresariales en Chihuahua." />
       </Head>
       <Navbar visible={true} />
-      
+
       {/* Banner decorativo */}
       <div className={styles.bannerWrapper}>
         <img
@@ -59,11 +60,10 @@ export default function Nosotros() {
         {/* Secciones alternadas */}
         <div className={styles.contenidoWrapper}>
           {contenidoSecciones.map((seccion, index) => (
-            <section 
-              key={seccion.id} 
-              className={`${styles.seccionContenido} ${
-                seccion.posicion === 'izquierda' ? styles.imagenIzquierda : styles.imagenDerecha
-              }`}
+            <section
+              key={seccion.id}
+              className={`${styles.seccionContenido} ${seccion.posicion === 'izquierda' ? styles.imagenIzquierda : styles.imagenDerecha
+                }`}
             >
               {/* Columna de imagen */}
               <div className={styles.columnaImagen}>
@@ -85,7 +85,7 @@ export default function Nosotros() {
                   <h2 className={styles.tituloSeccion}>{seccion.titulo}</h2>
                   <div className={styles.separador}></div>
                   <p className={styles.textoSeccion}>{seccion.texto}</p>
-                  
+
                   {/* Decoración adicional */}
                   <div className={styles.numeroSeccion}>
                     {String(index + 1).padStart(2, '0')}
@@ -118,7 +118,9 @@ export default function Nosotros() {
           </div>
         </section>
       </main>
-      
+          <Valores  />
+        <div style={{ height: '25vh', background: '#ffffffff' }} />
+
       <Footer />
     </>
   );

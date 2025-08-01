@@ -99,9 +99,6 @@
     align-self: start;
     /* Se alinean desde arriba */
     padding-bottom: 2rem;
-    /* Espacio adicional arriba */
-    /* min-height: 200px; */
-    /* Altura mínima mayor */
 }
 
 .columna:first-child {
@@ -133,7 +130,8 @@
 
 .columna:last-child li {
     text-align: right;
-    padding-right: 3rem;
+    padding-right: 4rem;
+    margin-bottom: 25px;
 }
 
 /* COLUMNA CENTRAL - Altura normal */
@@ -224,6 +222,17 @@
     padding: 8px 20px;
     display: inline-block;
 }
+
+.iconoRed {
+  display: inline-block;
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.iconoRed:hover {
+  filter: brightness(0.1); /* oscurece el ícono */
+  transform: scale(1.05);  /* pequeño zoom al pasar el mouse */
+}
+
 
 /* === RESPONSIVE === */
 @media (max-width: 768px) {

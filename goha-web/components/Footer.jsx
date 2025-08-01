@@ -42,10 +42,10 @@ export default function Footer() {
 
         {/* Columna Centro - Contenido normal */}
         <div className={styles.columna}>
-          <h3 className={styles.tituloColumna}>Ubicaciones</h3>
+          <h3 className={styles.tituloColumna}>Distribuidores autorizados</h3>
           <ul className={styles.listaColumna}>
-            <li>Chihuahua, México</li>
-            <li>Lun - Vie: 9:00 - 18:00</li>
+            <li>*****</li>
+            <li>*****</li>
           </ul>
         </div>
 
@@ -53,10 +53,30 @@ export default function Footer() {
         <div className={styles.columna}>
           <h3 className={styles.tituloColumna}>Síguenos</h3>
           <ul className={styles.listaColumna}>
-            <li>Facebook</li>
-            <li>LinkedIn</li>
-            <li>Instagram</li>
-            <li>YouTube</li>
+            <li>
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className={styles.iconoRed}
+              >
+                <Image src="/assets/facebook.svg" alt="Facebook" width={44} height={44} />
+              </a>
+
+            </li>
+            <li>
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className={styles.iconoRed}
+              >
+                <Image src="/assets/Instagram.svg" alt="Facebook" width={44} height={44} />
+              </a>
+
+            </li>
           </ul>
         </div>
       </div>

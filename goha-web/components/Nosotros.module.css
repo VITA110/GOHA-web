@@ -1,7 +1,7 @@
 /* === BANNER DECORATIVO === */
 .bannerWrapper {
-    width: 100%;
-  height: 120px; /* Ajusta a la altura del SVG */
+  width: 100%;
+  height: 120px;
   background-image: url('/barra.svg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -14,50 +14,48 @@
   display: block;
 }
 
-/* === CONTAINER PRINCIPAL === */
 .mainContainer {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 20px;
-  padding-bottom: 5rem;
   position: relative;
 }
 
 /* === ENCABEZADO === */
 .headerSection {
   text-align: center;
-  padding: 1px 0 60px;
+  padding: 0 0 0;
+  padding-left: 5rem;
+  
   /* background: linear-gradient(135deg, rgba(217, 135, 135, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%); */
   border-radius: 20px;
-  margin: 0 0 80px;
+  margin: 0 0 8px;
 }
 
 .pageTitle h1 {
-     color: #ffffff !important;
+  color: #ffffff !important;
 
 }
 
 .pageTitle {
-  font-size: 48px;
+  font-size: 62px;
   font-weight: 800;
   color: #ffffff;
+  text-align: right;
+  padding-right: 10rem;
   margin-bottom: 20px;
-  /* background: linear-gradient(135deg, #000000 0%, #ffffff 100%); */
-     text-shadow: 7px 7px 5px rgba(0,0,0,0.5);
-/* 
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
+  text-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5);
   background-clip: text;
 }
 
 .pageSubtitle {
+  text-align: left;
   font-size: 20px;
   color: #000000;
   line-height: 1.6;
-  max-width: 600px;
-  margin: 0 auto;
-  font-weight: 400;
+  max-width: 400px;
+  /* margin: 0 auto; */
+  font-weight: 600;
 }
 
 /* === CONTENIDO WRAPPER === */
@@ -203,7 +201,8 @@
 /* === SECCIÓN ESTADÍSTICAS === */
 .estadisticasSection {
   background: linear-gradient(135deg, #2495ff 0%, #ff1010 100%);
-  border-radius: 25px; ;
+  border-radius: 25px;
+  ;
   padding: 60px 40px;
   margin: 80px 0 100px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
@@ -285,7 +284,7 @@
 
   .imagenIzquierda,
   .imagenDerecha {
-    grid-template-areas: 
+    grid-template-areas:
       "imagen"
       "texto";
   }
