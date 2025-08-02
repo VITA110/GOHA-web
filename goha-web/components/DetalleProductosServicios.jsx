@@ -6,54 +6,52 @@ import Image from 'next/image';
 const productos = [
   {
     titulo: 'Hardware empresarial',
-    descripcion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    descripcion: 'Ofrecemos equipos robustos y confiables para entornos corporativos, incluyendo servidores, estaciones de trabajo, laptops y redes. Soluciones que mejoran la productividad y garantizan el rendimiento continuo de las operaciones empresariales más exigentes.',
     imagen: '/imagenes/hardware-ejemplo.jpg',
     icono: '/iconsPS/hardware.svg',
   },
   {
     titulo: 'Software especializado',
-    descripcion: 'Sed ut perspiciatis unde omnis iste natus error.',
+    descripcion: 'Distribuimos y configuramos software profesional adaptado a diversas industrias. Desde licencias comerciales hasta soluciones personalizadas, aseguramos compatibilidad, soporte técnico y funcionalidad óptima para cada necesidad operativa o administrativa.',
     imagen: '/imagenes/software-ejemplo.jpg',
     icono: '/iconsPS/software.svg',
   },
   {
-    titulo: 'Impresión y consumibles',
-    descripcion: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur.',
+    titulo: 'Impresión/consumibles',
+    descripcion: 'Proveemos impresoras de alto rendimiento junto con suministros originales como cartuchos, tóner y papel especializado. Garantizamos calidad de impresión, durabilidad y abastecimiento constante para mantener la continuidad de tus procesos.',
     imagen: '/imagenes/impresion-ejemplo.jpg',
     icono: '/iconsPS/impresoras.svg',
   },
   {
-    titulo: 'Accesorios y componentes',
-    descripcion: 'Ut enim ad minima veniam, quis nostrum exercitationem.',
+    titulo: 'Accesorios/componentes',
+    descripcion: 'Contamos con una amplia gama de accesorios tecnológicos y refacciones: teclados, mouse, fuentes de poder, memorias RAM, discos duros, entre otros. Ideales para mantenimiento, ampliación o mejora de equipos existentes.',
     imagen: '/imagenes/componentes-ejemplo.jpg',
     icono: '/iconsPS/accesorios.svg',
   },
   {
     titulo: 'Proveeduría MRO',
-    descripcion: 'Ut enim ad minima veniam, quis nostrum exercitationem.',
+    descripcion: 'Suministramos productos para el mantenimiento, reparación y operación (MRO) de entornos industriales y corporativos. Desde herramientas hasta insumos técnicos, apoyamos la continuidad operativa y la eficiencia en planta o oficina.',
     imagen: '/imagenes/proveeduria-ejemplo.jpg',
     icono: '/iconsPS/proveeduria.svg',
   },
   {
     titulo: 'Impresoras y equipos de cómputo',
-    descripcion: 'Ut enim ad minima veniam, quis nostrum exercitationem.',
+    descripcion: 'Ofrecemos soluciones integrales de cómputo e impresión para cualquier escala. Equipos configurados según tus necesidades, con asesoría técnica, instalación y soporte postventa para garantizar funcionalidad desde el primer día.',
     imagen: '/imagenes/impresora-ejemplo.jpg',
     icono: '/iconsPS/impresion.svg',
   },
   {
     titulo: 'Soluciones de código de barras',
-    descripcion: 'Ut enim ad minima veniam, quis nostrum exercitationem.',
+    descripcion: 'Integramos sistemas de identificación y trazabilidad mediante escáneres, impresoras de etiquetas, lectores industriales y software especializado. Facilitamos el control logístico, inventarios y automatización de procesos en distintas industrias.',
     imagen: '/imagenes/codigo-ejemplo.jpg',
     icono: '/iconsPS/codigo.svg',
   },
   {
     titulo: 'Señalización digital',
-    descripcion: 'Ut enim ad minima veniam, quis nostrum exercitationem.',
+    descripcion: 'Diseñamos e implementamos soluciones de cartelería digital con pantallas profesionales, reproductores multimedia y software de gestión. Ideal para comunicación visual, publicidad dinámica e información en tiempo real en espacios comerciales o corporativos.',
     imagen: '/imagenes/senalizacion-ejemplo.jpg',
     icono: '/iconsPS/senalizacion.svg',
   },
-  // ... más objetos si lo deseas{{{{{{{{{{sssss
-  // }}}}}}}}}}
 ];
 
 export default function DetalleProductosServicios() {

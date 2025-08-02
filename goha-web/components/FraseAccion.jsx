@@ -7,8 +7,13 @@ export default function FraseAccion() {
         Impulsamos operaciones con tecnologías adaptadas a las exigencias de tu industria.
       </p>
       <div className={styles.botones}>
-        <button className={styles.botonClaro}>Conoce nuestras<br />soluciones</button>
-        <button className={styles.botonOscuro}>Visitar</button>
+        <div className={styles.botones}>
+          <a href="/servicios" className={styles.botonClaro}>
+            Conoce nuestras<br />soluciones
+          </a><a href="#ubi" className={styles.botonOscuro}>
+            Visitar
+          </a>
+        </div>
       </div>
     </div>
   );

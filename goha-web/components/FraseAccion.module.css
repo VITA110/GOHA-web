@@ -16,6 +16,38 @@
 }
 
 .botones {
+  display: flex;
+  gap: 1rem; /* ajusta según tu diseño actual */
+  align-items: center;
+}
+
+.botonClaro,
+.botonOscuro {
+  /* Tu CSS existente... */
+  
+  /* Añadir estas propiedades para que se comporten como botones */
+  text-decoration: none;
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  
+  /* Reset de estilos de enlace */
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.botonOscuro 
+
+.botonClaro:hover,
+.botonOscuro:hover {
+  text-decoration: none;
+}
+
+.botones {
     display: flex;
     justify-content: center;
     gap: 5rem;
@@ -47,7 +79,7 @@
     background: black;
     color: white;
     font-weight: 700;
-    padding: 0.5rem 2rem;
+    padding: 1rem 2rem;
     border-radius: 10px;
     font-size: 1rem;
     border: none;
