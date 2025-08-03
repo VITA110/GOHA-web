@@ -44,7 +44,9 @@ export default function Home() {
         </div>
         <FraseAccion />
         <CarruselEmpresas />
+        <section id="SerPro" >
         <ProductosServicios />
+        </section>
         <div style={{ height: '25vh', background: '#ffffffff' }} />
         <Lideres />
         <div style={{ height: '25vh', background: '#ffffffff' }} />

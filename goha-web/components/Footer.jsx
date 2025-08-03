@@ -30,32 +30,49 @@ export default function Footer() {
 
       {/* Contenido en 3 columnas */}
       <div className={styles.contenidoWrapper}>
-        {/* Columna Izquierda - Más contenido */}
         <div className={styles.columna}>
-          <h3 className={styles.tituloColumna}>Servicios</h3>
+          <h3 className={styles.tituloColumna}>Accesos rapidos</h3>
           <ul className={styles.listaColumna}>
-            <li>Hardware empresarial</li>
-            <li>Software especializado</li>
-            <li>Impresión y consumibles</li>
+            <li>
+              <a href="/#SerPro" className={styles.linkColumna}>
+                Servicios y productos
+              </a>
+            </li>
+            <li>
+              <a href="/nosotros" className={styles.linkColumna}>
+                Conoce más de nosotros
+              </a>
+            </li>
+            <li>
+              <a href="/impresion-consumibles" className={styles.linkColumna}>
+                Solicita algunos de nuestros Servicios
+              </a>
+            </li>
           </ul>
         </div>
-
-        {/* Columna Centro - Contenido normal */}
         <div className={styles.columna}>
           <h3 className={styles.tituloColumna}>Distribuidores autorizados</h3>
           <ul className={styles.listaColumna}>
-            <li>*****</li>
-            <li>*****</li>
-          </ul>
-        </div>
 
-        {/* Columna Derecha - Más contenido */}
+            </ul>
+            {/* Imagen de Zebra */}
+            <div className={styles.imagenDistribuidor}>
+              <Image
+                src="/assets/zebraC.png"
+                alt="Distribuidor Zebra"
+                width={250}
+                height={80}
+              />
+            </div>
+          </div>
+
+          {/* Columna Derecha - Más contenido */}
         <div className={styles.columna}>
           <h3 className={styles.tituloColumna}>Síguenos</h3>
           <ul className={styles.listaColumna}>
             <li>
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/Goha.IOS"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
@@ -67,7 +84,7 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href="https://facebook.com"
+                href="https://www.instagram.com/goha.ios"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"

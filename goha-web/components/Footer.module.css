@@ -233,6 +233,19 @@
   transform: scale(1.05);  /* pequeño zoom al pasar el mouse */
 }
 
+.linkColumna{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    transition: ease-in-out 0.4s;
+    color: #ffffff;
+}
+
+.linkColumna:hover {
+    color: #000000;
+    
+}
+
 
 /* === RESPONSIVE === */
 @media (max-width: 768px) {
