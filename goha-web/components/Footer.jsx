@@ -78,7 +78,7 @@ export default function Footer() {
                 aria-label="Facebook"
                 className={styles.iconoRed}
               >
-                <Image src="/assets/facebook.svg" alt="Facebook" width={44} height={44} />
+                <Image src="/assets/Facebook.svg" alt="Facebook" width={44} height={44} />
               </a>
 
             </li>
@@ -90,7 +90,7 @@ export default function Footer() {
                 aria-label="Facebook"
                 className={styles.iconoRed}
               >
-                <Image src="/assets/Instagram.svg" alt="Facebook" width={44} height={44} />
+                <Image src="/assets/Instagram.svg" alt="Instagram" width={44} height={44} />
               </a>
 
             </li>
