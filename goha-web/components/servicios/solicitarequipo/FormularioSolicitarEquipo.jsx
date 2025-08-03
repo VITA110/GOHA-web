@@ -33,23 +33,39 @@ export default function FormularioSolicitarEquipo({
     setIsSubmitting(true);
     
     try {
-      if (onSubmit) {
-        await onSubmit(formData);
-      } else {
-        console.log('Formulario enviado:', formData);
-      }
-      
-      // Resetear formulario después del envío exitoso
-      setFormData({
-        nombreEmpresa: '',
-        correo: '',
-        telefono: '',
-        tipoEquipo: '',
-        ubicacion: '',
-        descripcion: ''
+      const response = await fetch('/api/equipo/enviar', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
       });
+
+      const result = await response.json();
+
+      if (result.success) {
+        // Mensaje de éxito
+        alert('¡Solicitud de equipo enviada exitosamente! Nuestro equipo comercial se contactará contigo pronto.');
+        
+        // Resetear formulario después del envío exitoso
+        setFormData({
+          nombreEmpresa: '',
+          correo: '',
+          telefono: '',
+          tipoEquipo: '',
+          ubicacion: '',
+          descripcion: ''
+        });
+        
+        console.log('Solicitud de equipo enviada:', result.data);
+      } else {
+        // Mostrar error específico
+        alert(`Error: ${result.message}`);
+        console.error('Error del servidor:', result);
+      }
     } catch (error) {
-      console.error('Error al enviar formulario:', error);
+      console.error('Error de conexión:', error);
+      alert('Error de conexión. Por favor, intenta nuevamente.');
     } finally {
       setIsSubmitting(false);
     }

@@ -28,15 +28,23 @@ export default function FormularioContacto({
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    try {
-      if (onSubmit) {
-        await onSubmit(formData);
-      } else {
-        console.log('Formulario enviado:', formData);
-      }
+  e.preventDefault();
+  setIsSubmitting(true);
+  
+  try {
+    const response = await fetch('/api/contacto/enviar', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData)
+    });
+
+    const result = await response.json();
+
+    if (result.success) {
+      // Mensaje de éxito
+      alert('¡Formulario enviado exitosamente! Te contactaremos pronto.');
       
       // Resetear formulario después del envío exitoso
       setFormData({
@@ -46,12 +54,20 @@ export default function FormularioContacto({
         motivoContacto: '',
         descripcion: ''
       });
-    } catch (error) {
-      console.error('Error al enviar formulario:', error);
-    } finally {
-      setIsSubmitting(false);
+      
+      console.log('Formulario enviado:', result.data);
+    } else {
+      // Mostrar error específico
+      alert(`Error: ${result.message}`);
+      console.error('Error del servidor:', result);
     }
-  };
+  } catch (error) {
+    console.error('Error de conexión:', error);
+    alert('Error de conexión. Por favor, intenta nuevamente.');
+  } finally {
+    setIsSubmitting(false);
+  }
+};
 
   const toggleTooltip = () => {
     setShowTooltip(!showTooltip);
