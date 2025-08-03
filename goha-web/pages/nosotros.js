@@ -112,7 +112,7 @@ export default function Nosotros() {
               <span className={styles.label}>Soporte Técnico</span>
             </div>
             <div className={styles.estadistica}>
-              <span className={styles.numero}>3</span>
+              <span className={styles.numero}>2</span>
               <span className={styles.label}>Sucursales</span>
             </div>
           </div>
