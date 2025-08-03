@@ -5,31 +5,23 @@ import styles from './Ubicaciones.module.css';
 const sucursales = [
     {
         id: 1,
-        nombre: 'Sucursal Centro',
-        direccion: 'Av. Independencia 1234, Centro, Chihuahua, Chih.',
-        telefono: '+52 (614) 123-4567',
-        horario: 'Lun - Vie: 9:00 - 18:00, Sáb: 9:00 - 14:00',
-        coordenadas: { lat: 28.6329957, lng: -106.0691004 }, // Coordenadas de Chihuahua Centro
-        embedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.234567890123!2d-106.0691004!3d28.6329957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDM3JzU4LjgiTiAxMDbCsDA0JzA4LjgiVw!5e0!3m2!1ses!2smx!4v1234567890123!5m2!1ses!2smx'
+        nombre: 'Cihuahua, Chi.',
+        direccion: 'Blvrd Antonio Ortiz Mena 3400, Lomas del Santuario I Etapa, Campestre-Lomas, 31206 Chihuahua, Chih.',
+        telefono: '+52 614 412 1803',
+        horario: 'Lun - Vie: 8:00 - 18:00',
+        coordenadas: { lat: 28.62856753650124, lng: -106.0982277733702 }, // Coordenadas de Chihuahua Centro
+        embedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.046297701739!2d-106.10088852479748!3d28.628374484269994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea43e7ec71c311%3A0x5890047b594b4b0b!2sGOHA%20-%20International%20Operating%20Solutions%20S.A.%20de%20C.V.!5e0!3m2!1ses!2smx!4v1754178545295!5m2!1ses!2smx'
     },
     {
         id: 2,
-        nombre: 'Sucursal Norte',
-        direccion: 'Blvd. Antonio Ortiz Mena 5678, San Felipe, Chihuahua, Chih.',
-        telefono: '+52 (614) 234-5678',
-        horario: 'Lun - Vie: 8:30 - 17:30, Sáb: 9:00 - 13:00',
-        coordenadas: { lat: 28.7329957, lng: -106.1191004 },
-        embedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.134567890123!2d-106.1191004!3d28.7329957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDQzJzU4LjgiTiAxMDbCsDA3JzA4LjgiVw!5e0!3m2!1ses!2smx!4v1234567890124!5m2!1ses!2smx'
+        nombre: 'Cd. Juárez, Chih.',
+        direccion: '11450 James Watt Dr a5, El Paso, TX 79936, Estados Unidos.',
+        telefono: '+1 915 234 9147',
+        horario: 'Lun - Vie: 9:00 - 16:00',
+        coordenadas: { lat: 31.740884630255582, lng: -106.31465460785937 },
+        embedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125432.56691289724!2d-106.48500340887921!3d31.751327386059305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e7432d281fd8a3%3A0x8f291d386375a182!2sGOHA%20Solutions%20Inc.!5e0!3m2!1ses!2smx!4v1754178186044!5m2!1ses!2smx'
     },
-    {
-        id: 3,
-        nombre: 'Sucursal Sur',
-        direccion: 'Av. Tecnológico 9101, Granjas, Chihuahua, Chih.',
-        telefono: '+52 (614) 345-6789',
-        horario: 'Lun - Vie: 9:00 - 18:00, Sáb: 10:00 - 15:00',
-        coordenadas: { lat: 28.5829957, lng: -106.0291004 },
-        embedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.334567890123!2d-106.0291004!3d28.5829957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDM0JzU4LjgiTiAxMDbCsDAxJzA4LjgiVw!5e0!3m2!1ses!2smx!4v1234567890125!5m2!1ses!2smx'
-    }
+    
 ];
 
 export default function Ubicaciones() {

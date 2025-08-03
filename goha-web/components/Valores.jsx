@@ -62,14 +62,14 @@ export default function Valores() {
               style={{ '--color-tema': valor.color }}
             >
               {/* Imagen de fondo */}
-              <div className={styles.imagenFondo}>
+              {/* <div className={styles.imagenFondo}>
                 <img
                   src={valor.imagen}
                   alt={valor.titulo}
                   className={styles.imagen}
                 />
                 <div className={styles.overlay}></div>
-              </div>
+              </div> */}
 
               {/* Contenido de la tarjeta */}
               <div className={styles.contenido}>

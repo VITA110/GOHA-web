@@ -22,29 +22,30 @@
   padding: 0 20px; /* PADDING INTERNO: Aumentado a 20px para más espacio interno */
 }
 
+.logo {
+  width: 100%;
+  height: 100%;
+  max-width: none; /* Remover límite de ancho */
+  max-height: none; /* Remover límite de altura */
+  object-fit: contain;
+  display: block;
+}
+
 .tarjeta {
-  background: linear-gradient(to bottom, #e0e0e0, #87b1d9);
+  /* background: linear-gradient(to bottom, #e0e0e0, #87b1d9); */
   border-radius: 12px;
-  box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.5);
-  padding: 40px 30px;
+  /* box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.5); */
+  /* padding: 15px;  */
   display: flex;
   justify-content: center;
   align-items: center;
   transition: transform 0.3s ease;
   width: 100%;
-  overflow: hidden; /* CONTENCIÓN: Evita que contenido se salga de la tarjeta */
-  box-sizing: border-box; /* CAJA: Incluye padding y border en el tamaño total */
+  min-height: 180px; /* Altura mínima */
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .tarjeta:hover {
-  transform: translateY(-15px);
-}
-
-.logo {
-  max-width: 100%; /* LÍMITE DE ANCHO: No puede ser más ancho que su contenedor */
-  max-height: 120px; /* LÍMITE DE ALTURA: Controla la altura máxima del logo */
-  width: auto; /* ANCHO AUTOMÁTICO: Mantiene proporción */
-  height: auto; /* ALTURA AUTOMÁTICA: Mantiene proporción */
-  object-fit: contain; /* AJUSTE: Se ajusta sin deformarse dentro de los límites */
-  display: block; /* DISPLAY: Elimina espacios extra que pueden causar img */
+transform: translateY(-15px);
 }

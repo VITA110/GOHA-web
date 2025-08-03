@@ -3,12 +3,12 @@ import styles from './Lideres.module.css';
 import Image from 'next/image';
 
 const empresas = [
-  { nombre: 'Jabil', logo: '/logos/Jabil.svg' },
-  { nombre: 'Jabil', logo: '/logos/Jabil.svg' },
-  { nombre: 'Jabil', logo: '/logos/Jabil.svg' },
-  { nombre: 'Jabil', logo: '/logos/Jabil.svg' },
-  { nombre: 'Jabil', logo: '/logos/Jabil.svg' },
-  { nombre: 'Jabil', logo: '/logos/Jabil.svg' },
+  { nombre: 'Jabil', logo: '/logos/lideres/Jabil.svg' },
+  { nombre: 'Jabil', logo: '/logos/lideres/Femsa.svg' },
+  { nombre: 'Jabil', logo: '/logos/lideres/Interseramic.svg' },
+  { nombre: 'Jabil', logo: '/logos/lideres/Nifco.svg' },
+  { nombre: 'Jabil', logo: '/logos/lideres/Cummins.svg' },
+  { nombre: 'Jabil', logo: '/logos/lideres/Alt.svg' },
 ];
 
 export default function Lideres() {

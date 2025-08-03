@@ -1,8 +1,9 @@
 /* === SECCIÓN PRINCIPAL === */
 .seccion {
   padding: 100px 20px;
-  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #ffebeb 100%);
   min-height: 100vh;
+  border-radius: 5rem;
   position: relative;
 }
 
@@ -50,6 +51,13 @@
   border-radius: 20px;
   overflow: hidden;
   cursor: pointer;
+  /* background-color: #d0d0d0; */
+  background: linear-gradient(
+    135deg,
+    rgb(208, 208, 208) 0%,
+    rgba(74, 74, 74, 0.4) 50%,
+    var(--color-tema, #ffffff) 100%
+  );
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   flex: 1;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -62,7 +70,7 @@
 }
 
 /* === IMAGEN DE FONDO === */
-.imagenFondo {
+/* .imagenFondo {
   position: absolute;
   top: 0;
   left: 0;
@@ -108,7 +116,7 @@
     rgba(0, 0, 0, 0.1) 50%,
     var(--color-tema, #87b1d9) 100%
   );
-}
+} */
 
 /* === CONTENIDO === */
 .contenido {
@@ -159,7 +167,7 @@
 .tituloValor {
   font-size: 24px;
   font-weight: 700;
-  color: #ffffff;
+  color: #232323;
   text-align: center;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
   margin: 0;
