@@ -3,9 +3,9 @@ import styles from './NotaInformativaEquipo.module.css';
 
 export default function NotaInformativaEquipo({ 
   titulo = "Nota:", 
-  descripcion = "Este formulario es exclusivo para contacto profesional con nuestra empresa.",
-  seguimiento = "Nos comunicaremos por correo electrónico o vía telefónica para dar seguimiento a su mensaje.",
-  recomendacion = "Le pedimos usar este canal de manera responsable y clara.",
+  descripcion = "Este formulario está diseñado para solicitar equipos tecnológicos profesionales.",
+  seguimiento = "La información enviada será verificada y se dará seguimiento mediante correo electrónico o llamada telefónica.",
+  recomendacion = "Se recomienda usar este medio con responsabilidad para garantizar una atención adecuada.",
   className = ""
 }) {
   return (

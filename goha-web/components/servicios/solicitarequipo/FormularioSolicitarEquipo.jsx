@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import styles from './FormularioSolicitarEquipo.module.css';
+import CuadroFlotanteEquipo from './CuadroFlotanteEquipo';
 
 export default function FormularioSolicitarEquipo({ 
   titulo = "Solicitar Equipo", 
-  icono = "💻",
+  icono = "?",
   onSubmit,
   className = ""
 }) {
@@ -17,6 +18,7 @@ export default function FormularioSolicitarEquipo({
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showTooltip, setShowTooltip] = useState(false);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -53,14 +55,29 @@ export default function FormularioSolicitarEquipo({
     }
   };
 
+  const toggleTooltip = () => {
+    setShowTooltip(!showTooltip);
+  };
+
+  const closeTooltip = () => {
+    setShowTooltip(false);
+  };
+
   return (
-    <div className={`${styles.formularioSoporteEquipo} ${className}`}>
+    <div className={`${styles.formularioSolicitarEquipo} ${className}`}>
       <div className={styles.formularioContainer}>
         <div className={styles.formularioHeader}>
           <h2 className={styles.formularioTitulo}>
             {titulo}
-            <div className={styles.tituloIcono}>
-              <span>{icono}</span>
+            <div className={styles.tituloIconoContainer}>
+              <button 
+                type="button"
+                className={styles.tituloIcono}
+                onClick={toggleTooltip}
+                aria-label="Mostrar instrucciones de equipo"
+              >
+                <span>{icono}</span>
+              </button>
             </div>
           </h2>
         </div>
@@ -205,6 +222,12 @@ export default function FormularioSolicitarEquipo({
           </button>
         </form>
       </div>
+
+      {/* Cuadro flotante separado */}
+      <CuadroFlotanteEquipo 
+        isVisible={showTooltip}
+        onClose={closeTooltip}
+      />
     </div>
   );
 }

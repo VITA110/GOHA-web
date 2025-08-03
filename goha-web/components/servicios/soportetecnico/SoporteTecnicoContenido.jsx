@@ -39,7 +39,7 @@ export default function SoporteTecnicoContenido() {
           <div className={styles.contenidoFormulario}>
             <FormularioSoporteTecnico 
               titulo="Soporte Técnico"
-              icono="🛠️"
+              icono="?"
               onSubmit={handleFormSubmit}
             />
           </div>
