@@ -10,10 +10,10 @@ export default function SolicitarEquipoContenido() {
   const images = [
     '/imagenes/equipo-ejemplo1.jpg', // img1
     '/imagenes/equipo-ejemplo2.jpg', // img2
-    '/api/placeholder/400/500', // img3
-    '/api/placeholder/400/500', // img4
-    '/api/placeholder/400/500', // img5
-    '/api/placeholder/400/500'  // img6
+    '/imagenes/equipo-ejemplo3.jpg', // img3
+    '/imagenes/equipo-ejemplo4.jpg', // img4
+    '/imagenes/equipo-ejemplo5.jpg', // img5
+    '/imagenes/equipo-ejemplo6.jpg'  // img6
   ];
 
   // Función para manejar el envío del formulario
@@ -39,7 +39,7 @@ export default function SolicitarEquipoContenido() {
           <div className={styles.contenidoFormulario}>
             <FormularioSoporteEquipo 
               titulo="Solicitar Equipo"
-              icono="💻"
+              icono="?"
               onSubmit={handleFormSubmit}
             />
           </div>

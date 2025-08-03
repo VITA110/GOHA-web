@@ -4,7 +4,7 @@ import CuadroFlotanteSoporte from './CuadroFlotanteSoporte';
 
 export default function FormularioSoporteTecnico({ 
   titulo = "Soporte Técnico", 
-  icono = "🛠️",
+  icono = "?",
   onSubmit,
   className = ""
 }) {
