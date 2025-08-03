@@ -8,7 +8,7 @@ import ProductosServicios from '@/components/ProductosServicios';
 import Lideres from '@/components/Lideres';
 import FraseFinal from '@/components/FraseFinal';
 import Footer from '@/components/Footer';
-import Ubicaciones from '@/components/ubicaciones';
+import Ubicaciones from '@/components/Ubicaciones';
 
 export default function Home() {
   const sloganRef = useRef(null);
