@@ -1,12 +1,12 @@
 
-/*
+
 import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
   return (
     <Html lang="es">
       <Head>
-        {/* Aquí van cosas globales como meta tags, fuentes, etc. }
+        {/* Aquí van cosas globales como meta tags, fuentes, etc. */}
       </Head>
       <body>
         <Main />
@@ -15,4 +15,3 @@ export default function Document() {
     </Html>
   );
 }
-*/
