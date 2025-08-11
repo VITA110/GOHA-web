@@ -33,10 +33,10 @@ const contenidoSecciones = [
 export default function Nosotros() {
   return (
     <>
-      <Head>
+      <head>
         <title>Sobre nosotros - GOHA Networks</title>
         <meta name="description" content="Conoce más sobre GOHA Networks, nuestra historia, misión, visión y valores. Líder en soluciones tecnológicas empresariales en Chihuahua." />
-      </Head>
+      </head>
       <Navbar visible={true} />
 
       {/* Banner decorativo */}
