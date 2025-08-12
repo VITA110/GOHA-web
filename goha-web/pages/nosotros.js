@@ -100,11 +100,11 @@ export default function Nosotros() {
         <section className={styles.estadisticasSection}>
           <div className={styles.estadisticasGrid}>
             <div className={styles.estadistica}>
-              <span className={styles.numero}>500+</span>
-              <span className={styles.label}>Empresas Atendidas</span>
+              <span className={styles.numero}>+1000</span>
+              <span className={styles.label}>Clientes atendidos</span>
             </div>
             <div className={styles.estadistica}>
-              <span className={styles.numero}>9</span>
+              <span className={styles.numero}>+30</span>
               <span className={styles.label}>Años de Experiencia</span>
             </div>
             <div className={styles.estadistica}>

@@ -19,4 +19,7 @@ html {
   scroll-behavior: smooth;
 }
 
+html, body {
+  min-width: 1200px; /* Ajusta según tus necesidades */
+}
 
