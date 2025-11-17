@@ -19,20 +19,13 @@ export default function ProductosServicios() {
     return (
         <section className={styles.seccion}>
             <div className={styles.fondoWrapper}>
-                <Image
-                    src="/FondoPS.svg"
-                    alt="Fondo Productos y Servicios"
-                    width={1440}
-                    height={0}
-                    className={styles.fondo}
-                    priority
-                />
+             
             </div>
             <div className={styles.contenido}>
                 <h2 className={styles.titulo}>
-                    Todo lo que tu empresa <br />
-                    necesita, integrado en un <br />
+                    Todo lo que tu empresa necesita, integrado en un 
                     solo lugar.
+                    
                 </h2>
 
                 <div className={styles.grid}>
@@ -43,9 +36,9 @@ export default function ProductosServicios() {
                         </div>
                     ))}
                 </div>
-                <div className={styles.contenido}>
+                {/* <div className={styles.contenido}>
                     <DetalleProductosServicios />
-                </div>
+                </div> */}
                 <div className={styles.divisionWrapper}>
                     <Image
                         src="/DivisionFrase.svg"

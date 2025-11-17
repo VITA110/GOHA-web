@@ -5,20 +5,28 @@ import styles from './Navbar.module.css';
 export default function Navbar({ visible }) {
   return (
     <header className={`${styles.wrapper} ${visible ? styles.visible : styles.hidden}`}>
-      <Link href="/">
+      
+
+      <nav className={styles.menu}>
+        <Link href="/nosotros" legacyBehavior>
+          <a className={styles.button}>Nosotros</a>
+        </Link>
+        <Link href="/servicios" legacyBehavior>
+          <a className={styles.button}>Sevicios</a>
+        </Link>
+        <Link href="/">
         <Image
-          src="/logo-goha.svg"
+          src="/assets/LogoColorAJUS.svg"
           alt="GOHA logo"
           width={40}
           height={40}
           className={styles.logo}
         />
       </Link>
+        <Link href="/#ubi" legacyBehavior>
+          <a className={styles.button}>Ubicaciones</a>
+        </Link>
 
-      <nav className={styles.menu}>
-        <Link href="/nosotros">Nosotros</Link>
-        <Link href="/servicios">Servicios</Link>
-        <Link href="/#ubi">Ubicaciones</Link>
         <Link href="/contacto" legacyBehavior>
           <a className={styles.button}>Contáctanos</a>
         </Link>
