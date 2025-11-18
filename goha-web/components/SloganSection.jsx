@@ -1,3 +1,4 @@
+// SloganSection.jsx
 import Image from 'next/image';
 import styles from './SloganSection.module.css';
 import PalabraAnimada from './PalabraAnimada';
@@ -9,8 +10,8 @@ export default function SloganSection() {
         <Image
           src="/assets/logoColor.svg"
           alt="Logo GOHA"
-          width={200}
-          height={200}
+          width={130}
+          height={130}
         />
       </div>
 

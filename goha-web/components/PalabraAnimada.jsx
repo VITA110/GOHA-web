@@ -1,3 +1,4 @@
+// PalabraAnimada.jsx
 import { useState, useEffect } from 'react';
 import styles from './PalabraAnimada.module.css';
 
