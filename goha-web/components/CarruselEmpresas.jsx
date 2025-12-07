@@ -13,7 +13,7 @@ const logos = [
 export default function CarruselEmpresas() {
   return (
     <section className={styles.carruselWrapper}>
-      <h2 className={styles.titulo}>En colaboración con reconocidas empresas</h2>
+      <h2 className={styles.titulo}>TRABAJAMOS CON MARCAS RECONOCIDAS</h2>
 
       {/* Primer carril */}
       <div className={styles.carrilContainer}>
