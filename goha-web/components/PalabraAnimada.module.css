@@ -1,13 +1,13 @@
+/* PalabraAnimada.module.css */
 .palabra {
   display: inline-block;
-  width: 8ch; /* Reservamos un ancho fijo con 8 caracteres */
+  width: 9ch; /* Ajustado para que quepa "Simplifican" */
   text-align: left;
   color: #ff0000;
   font-weight: 800;
   transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
   animation: aparecer 0.4s ease-in-out;
 }
-
 
 @keyframes aparecer {
   from {
