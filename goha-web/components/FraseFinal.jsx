@@ -5,7 +5,7 @@ export default function FraseFinal() {
   return (
     <div className={styles.seccion}>
       <h2 className={styles.frase}>
-        ¿Listo para llevar tu operación al siguiente nivel?
+        ¿LISTO PARA LLEVAR TU OPERACIÓN AL SIGUIENTE NIVEL?
       </h2>
       <div className={styles.decoracion}></div>
     </div>
