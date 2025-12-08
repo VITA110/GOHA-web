@@ -200,7 +200,7 @@
 
 /* === SECCIÓN ESTADÍSTICAS === */
 .estadisticasSection {
-  background: linear-gradient(135deg, #2495ff 0%, #ff1010 100%);
+  background: linear-gradient(135deg, #5e5e5e 0%,#918c8c 50%, #d00202 100%);
   border-radius: 25px;
   ;
   padding: 60px 40px;

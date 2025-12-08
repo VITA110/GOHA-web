@@ -9,7 +9,7 @@ const valoresData = [
     icono: "🤝",
     imagen: "/assets/valores/honestidad.jpg",
     descripcion: "La transparencia y honestidad son la base de todas nuestras relaciones comerciales. Creemos en comunicar de manera clara los beneficios, limitaciones y costos reales de nuestras soluciones. Nuestros clientes confían en nosotros porque siempre decimos la verdad, incluso cuando no es la respuesta que esperan escuchar.",
-    color: "#4CAF50"
+    color: "#ff7070ff"
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const valoresData = [
     icono: "🎧",
     imagen: "/assets/valores/soporte.jpg", 
     descripcion: "Nuestro compromiso va más allá de la venta. Ofrecemos soporte técnico 24/7 con especialistas certificados que entienden tu negocio. Cada cliente tiene acceso directo a nuestro equipo de expertos, garantizando respuestas rápidas y soluciones efectivas que minimizan el tiempo de inactividad y maximizan la productividad.",
-    color: "#2196F3"
+    color: "#ff4747ff"
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const valoresData = [
     icono: "🔒",
     imagen: "/assets/valores/seguridad.jpg",
     descripcion: "La seguridad de tus datos y sistemas es nuestra máxima prioridad. Implementamos los más altos estándares de ciberseguridad, desde firewalls empresariales hasta protocolos de encriptación avanzados. Realizamos auditorías regulares y mantenemos certificaciones internacionales para proteger tu información crítica.",
-    color: "#FF9800"
+    color: "#ff3030ff"
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const valoresData = [
     icono: "⚡",
     imagen: "/assets/valores/compromiso.jpg",
     descripcion: "Nos comprometemos con el éxito a largo plazo de tu empresa. Esto significa entender tus objetivos específicos, adaptar nuestras soluciones a tus necesidades reales y acompañarte en cada etapa de crecimiento. Tu éxito es nuestro éxito, y trabajamos incansablemente para superarnos día a día.",
-    color: "#9C27B0"
+    color: "#ff0000ff"
   }
 ];
 

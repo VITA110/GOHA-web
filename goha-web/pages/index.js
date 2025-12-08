@@ -10,6 +10,8 @@ import Lideres from '@/components/Lideres';
 import FraseFinal from '@/components/FraseFinal';
 import Footer from '@/components/Footer';
 import Ubicaciones from '@/components/Ubicaciones';
+import UbiActua from '@/components/UbiActua';
+
 
 export default function Home() {
   const sloganRef = useRef(null);
