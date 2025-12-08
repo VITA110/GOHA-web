@@ -40,7 +40,7 @@ export default function Footer() {
             </li>
             <li>
               <a href="/nosotros" className={styles.linkColumna}>
-                Conoce más de nosotros
+                Conoce más de nosotros.
               </a>
             </li>
             <li>
