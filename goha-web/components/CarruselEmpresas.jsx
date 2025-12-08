@@ -9,6 +9,12 @@ const empresas = [
   { logo: 'logos/Zebra.svg', nombre: 'Zebra', pdf: '/catalogos/zebra-catalogo.pdf' },
   { logo: 'logos/Intel.svg', nombre: 'Intel', pdf: '/catalogos/intel-catalogo.pdf' },
   { logo: 'logos/Cisco.svg', nombre: 'Cisco', pdf: '/catalogos/cisco-catalogo.pdf' },
+  { logo: 'logos/Autodesk_Logo.svg', nombre: 'Asus', pdf: '/catalogos/cisco-catalogo.pdf' },
+  { logo: '/logos/actualizados/APC-logo.png', nombre: 'APC', pdf: '' },
+  // { logo: 'logos/actualizados/Autodesk-Logo.svg', nombre: 'Autodesk', pdf: '' },
+  // { logo: 'logos/actualizados/AXIS-LOGO.png', nombre: 'Axis', pdf: '' },
+  // { logo: 'logos/actualizados/Brother-logo.png', nombre: 'Brother', pdf: '' },
+  // { logo: 'logos/actualizados/datalogic-logo.png', nombre: 'datalogic', pdf: '' },
 ];
 
 export default function CarruselEmpresas() {
