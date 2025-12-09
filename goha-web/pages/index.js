@@ -87,12 +87,12 @@ export default function Home() {
         <section id="SerPro">
           <ProductosServicios />
         </section>
-        <div style={{ height: '25vh', background: '#ffffffff' }} />
+        <div style={{ height: '20vh', background: '#ffffffff' }} />
         <Lideres />
-        <div style={{ height: '25vh', background: '#ffffffff' }} />
-        <section id="ubi">
+        <div style={{ background: '#ffffffff' }} />
+        {/* <section id="ubi">
           <Ubicaciones />
-        </section>
+        </section> */}
 
         <FraseFinal />
         <Footer />

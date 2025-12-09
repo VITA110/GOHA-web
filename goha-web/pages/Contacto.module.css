@@ -1,29 +1,214 @@
-/* Contacto.module.css */
-.contactoPage {
+.contactSection {
   min-height: 100vh;
-  width: 100%;
-  position: relative;
-  background-color: white; /* Fondo siempre blanco */
+  background-color: white;
+  padding: 10rem 0rem;
+  padding-bottom: 0rem;
 }
 
-.contactoMain {
-  padding-top: 130px; /* Espacio para que no se empalme con el navbar */
-  min-height: calc(100vh - 130px);
-  width: 100%;
-  background-color: white; /* Fondo siempre blanco */
+.container {
+  max-width: 72rem;
+  margin: 0 auto;
 }
 
-/* Responsivo para diferentes tamaños de navbar */
-@media (max-width: 768px) {
-  .contactoMain {
-    padding-top: 70px;
-    min-height: calc(100vh - 70px);
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.titleAccent {
+  color: #dc2626;
+}
+
+.divider {
+  width: 6rem;
+  height: 0.25rem;
+  background-color: #dc2626;
+  margin: 0 auto 1.5rem;
+}
+
+.description {
+  color: #4b5563;
+  font-size: 1.125rem;
+  max-width: 42rem;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Contact Cards Grid */
+.cardsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .cardsGrid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 480px) {
-  .contactoMain {
-    padding-top: 60px;
-    min-height: calc(100vh - 60px);
+@media (min-width: 1024px) {
+  .cardsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card {
+  background-color: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  border-color: #dc2626;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  transform: translateY(-5px);
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.iconWrapper {
+  width: 4rem;
+  height: 4rem;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease;
+  color: white;
+}
+
+.card:hover .iconWrapper {
+  background-color: #dc2626;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 0.75rem;
+}
+
+.detailsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.detail {
+  color: #4b5563;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.detailLink {
+  color: #4b5563;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.detailLink:hover {
+  color: #dc2626;
+}
+
+/* Additional Info Section */
+.infoSection {
+  margin-top: 4rem;
+  background-color: black;
+  border-radius: 1rem;
+  padding: 0rem;
+  text-align: center;
+}
+
+.infoTitle {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.infoDescription {
+  color: #d1d5db;
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.buttonWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.button {
+  padding: 1rem 2rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.buttonPrimary {
+  background-color: #dc2626;
+  color: white;
+}
+
+.buttonPrimary:hover {
+  background-color: #b91c1c;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.buttonSecondary {
+  background-color: white;
+  color: black;
+}
+
+.buttonSecondary:hover {
+  background-color: #f3f4f6;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .infoTitle {
+    font-size: 1.5rem;
+  }
+  
+  .infoSection {
+    padding: 2rem 1.5rem;
+  }
+  
+  .contactSection {
+    padding: 3rem 1rem;
   }
 }
