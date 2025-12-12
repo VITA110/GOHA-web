@@ -1,17 +1,19 @@
 /* SoporteTecnicoContenido.module.css */
 .soporteTecnicoContenido {
-  min-height: 100vh;
-  background-color: white; /* Fondo siempre blanco */
+  min-height: 80vh;
+  background-color: white;
+  padding: 2rem; /* Padding por defecto */
+  padding-bottom: 0rem;
 }
 
 .contenidoContainer {
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
-  background-color: white; /* Fondo siempre blanco */
+  background-color: white;
 }
 
 .contenidoGrid{
-  background-color: white; /* Fondo siempre blanco */
+  background-color: white;
 }
 
 .contenidoHeader {
@@ -42,20 +44,20 @@
 /* Layout desktop */
 @media (min-width: 1024px) {
   .contenidoGrid {
-    grid-template-columns: 33% 67%; /* Más espacio para el formulario */
+    grid-template-columns: 33% 67%;
     gap: 2rem;
     align-items: center;
   }
   
   .soporteTecnicoContenido {
-    padding: 0rem;
+    padding: 2rem 3rem; /* Más padding horizontal en desktop */
   }
 }
 
 /* Responsivo tablet */
 @media (max-width: 1023px) and (min-width: 768px) {
   .soporteTecnicoContenido {
-    padding: 1rem;
+    padding: 1.5rem;
   }
   
   .contenidoTitulo {
@@ -70,7 +72,7 @@
 /* Responsivo móvil */
 @media (max-width: 767px) {
   .soporteTecnicoContenido {
-    padding: 0.5rem;
+    padding: 1rem;
   }
   
   .contenidoTitulo {

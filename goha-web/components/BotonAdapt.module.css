@@ -1,7 +1,7 @@
-.formSelector {
+.BotonAdapt {
   min-height: 100vh;
   background-color: white;
-  padding: 4rem 5rem;
+  padding: 4rem 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,13 +11,46 @@
   min-width: 80rem;
   width: 100%;
   margin: 0 auto;
-  padding-bottom: 5rem;
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /* Options View */
 .optionsContainer {
   text-align: center;
-  animation: fadeIn 0.4s ease-in;
+  animation: fadeInUp 0.5s ease-out;
 }
 
 .mainTitle {
@@ -25,6 +58,7 @@
   font-weight: bold;
   color: black;
   margin-bottom: 1rem;
+  animation: fadeInUp 0.6s ease-out;
 }
 
 .titleAccent {
@@ -35,6 +69,7 @@
   font-size: 1.25rem;
   color: #6b7280;
   margin-bottom: 3rem;
+  animation: fadeInUp 0.7s ease-out;
 }
 
 .optionsGrid {
@@ -59,6 +94,16 @@
   cursor: pointer;
   transition: all 0.3s ease;
   text-align: center;
+  animation: fadeInScale 0.5s ease-out;
+  animation-fill-mode: both;
+}
+
+.optionCard:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.optionCard:nth-child(2) {
+  animation-delay: 0.3s;
 }
 
 .optionCard:hover {
@@ -77,11 +122,12 @@
   justify-content: center;
   margin: 0 auto 1.5rem;
   color: white;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .optionCard:hover .optionIcon {
   background-color: #dc2626;
+  transform: scale(1.1) rotate(5deg);
 }
 
 .optionTitle {
@@ -100,7 +146,7 @@
 
 /* Form View */
 .formContainer {
-  animation: fadeIn 0.4s ease-in;
+  animation: fadeInUp 0.5s ease-out;
 }
 
 .backButton {
@@ -117,12 +163,14 @@
   cursor: pointer;
   transition: all 0.3s ease;
   margin-bottom: 2rem;
+  animation: slideInFromLeft 0.5s ease-out;
 }
 
 .backButton:hover {
   border-color: #dc2626;
   color: #dc2626;
   background-color: #fef2f2;
+  transform: translateX(-5px);
 }
 
 .backButton svg {
@@ -138,8 +186,12 @@
   border: 2px solid #e5e7eb;
   border-radius: 1rem;
   padding: 2rem;
-  padding-bottom: 0rem;
+  min-width: 60rem;
+  padding-right: 2rem;
   min-height: 400px;
+  animation: fadeInScale 0.6s ease-out;
+  animation-delay: 0.1s;
+  animation-fill-mode: both;
 }
 
 .formTitle {
@@ -149,6 +201,9 @@
   margin-bottom: 2rem;
   padding-bottom: 1rem;
   border-bottom: 3px solid #dc2626;
+  animation: fadeInUp 0.7s ease-out;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
 }
 
 .placeholder {
@@ -159,18 +214,6 @@
   background-color: #f9fafb;
   border-radius: 0.5rem;
   border: 2px dashed #e5e7eb;
-}
-
-/* Animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 /* Responsive */
@@ -197,5 +240,9 @@
   
   .formTitle {
     font-size: 1.5rem;
+  }
+  
+  .BotonAdapt {
+    padding: 2rem 1rem;
   }
 }
