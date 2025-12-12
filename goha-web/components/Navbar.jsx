@@ -11,7 +11,7 @@ export default function Navbar({ visible }) {
         <Link href="/nosotros" legacyBehavior>
           <a className={styles.button}>Nosotros</a>
         </Link>
-        <Link href="/servicios" legacyBehavior>
+        <Link href="#servis" legacyBehavior>
           <a className={styles.button}>Sevicios</a>
         </Link>
         <Link href="/">

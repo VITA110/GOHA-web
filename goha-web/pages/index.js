@@ -82,7 +82,7 @@ export default function Home() {
         </section>
         
         <CarruselEmpresas />
-        <section id="SerPro">
+        <section id="servis">
           <ProductosServicios />
         </section>
         <Lideres />
