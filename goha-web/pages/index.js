@@ -11,6 +11,7 @@ import FraseFinal from '@/components/FraseFinal';
 import Footer from '@/components/Footer';
 import Ubicaciones from '@/components/Ubicaciones';
 import UbiActua from '@/components/UbiActua';
+import BotonAdapt from '@/components/BotonAdapt';
 
 
 export default function Home() {
@@ -87,12 +88,9 @@ export default function Home() {
         <section id="SerPro">
           <ProductosServicios />
         </section>
-        <div style={{ height: '20vh', background: '#ffffffff' }} />
         <Lideres />
         <div style={{ background: '#ffffffff' }} />
-        {/* <section id="ubi">
-          <Ubicaciones />
-        </section> */}
+         <div style={{ height: '10vh', background: '#ffffffff' }} />
 
         <FraseFinal />
         <Footer />

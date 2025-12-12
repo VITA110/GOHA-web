@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import styles from './FormSelector.module.css';
+import styles from './BotonAdapt.module.css';
 // Importa tus componentes de formularios aquí
-// import FormularioA from './FormularioA';
-// import FormularioB from './FormularioB';
+import SoporteTecnicoContenido from '@/components/servicios/soportetecnico/SoporteTecnicoContenido';
+import SolicitarEquipoContenido from '@/components/servicios/solicitarequipo/SolicitarEquipoContenido';
 
-export default function FormSelector() {
+export default function BotonAdapt() {
   const [selectedOption, setSelectedOption] = useState(null);
 
   const handleOptionSelect = (option) => {
@@ -16,7 +16,7 @@ export default function FormSelector() {
   };
 
   return (
-    <div className={styles.formSelector}>
+    <div className={styles.BotonAdapt}>
       <div className={styles.container}>
         {!selectedOption ? (
           <div className={styles.optionsContainer}>
@@ -72,16 +72,16 @@ export default function FormSelector() {
               {selectedOption === 'opcion1' && (
                 <div>
                   <h3 className={styles.formTitle}>Formulario Opción 1</h3>
-                  {/* <FormularioA /> */}
-                  <p className={styles.placeholder}>Aquí va tu FormularioA</p>
+                  {<SoporteTecnicoContenido />}
+                  {/* <p className={styles.placeholder}>Aquí va tu FormularioA</p> */}
                 </div>
               )}
 
               {selectedOption === 'opcion2' && (
                 <div>
                   <h3 className={styles.formTitle}>Formulario Opción 2</h3>
-                  {/* <FormularioB /> */}
-                  <p className={styles.placeholder}>Aquí va tu FormularioB</p>
+                  {<SolicitarEquipoContenido />}
+                  {/* <p className={styles.placeholder}>Aquí va tu FormularioB</p> */}
                 </div>
               )}
             </div>

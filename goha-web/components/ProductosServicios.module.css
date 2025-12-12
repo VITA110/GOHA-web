@@ -3,7 +3,7 @@
     width: 100%;
     overflow: visible;
     padding-top: 60px;
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 .fondoWrapper {
@@ -18,7 +18,7 @@
 
 .fondo {
     width: 100%;
-    min-height: 5200px;
+    min-height: 3200px;
     object-fit: cover;
     max-width: 100%;
     height: auto;
@@ -27,10 +27,11 @@
 
 .contenido {
     position: relative;
-    min-height: 100vh;
+    min-height: 80vh;
     top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
     width: 100%;
     z-index: 1;
     display: flex;
@@ -58,7 +59,7 @@
     align-items: center;
     width: 72rem;
     max-width: 90%;
-    padding-bottom: 5rem;
+    padding-bottom: 1rem;
     margin: 0 auto;
 }
 
@@ -83,11 +84,12 @@
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.158);
 }
 
 .item:hover {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.199);
+    color: red;
     transform: translateY(-2px);
 }
 
@@ -98,7 +100,8 @@
     left: 50%;
     transform: translateX(-50%);
     width: 320px;
-    background-color: #fff;
+    background-color: #ffffff;
+    
     border-radius: 12px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
     z-index: 1000;
@@ -166,16 +169,15 @@
 
 /* Estilos para división entre secciones */
 .divisionWrapper {
-    position: relative;
+     position: relative;
     z-index: 20;
-    height: 0;
     overflow: visible;
     width: 100%;
+    padding-bottom: 12rem; /* Ajusta el valor a gusto */
 }
 
 .divisionImage {
     position: absolute;
-    top: -94px;
     left: 0;
     right: 0;
     width: 100% !important;

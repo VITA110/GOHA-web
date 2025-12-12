@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import styles from './ProductosServicios.module.css';
 import Image from 'next/image';
+import BotonAdapt from './BotonAdapt';
 
 const servicios = [
     { 
@@ -161,6 +162,9 @@ export default function ProductosServicios() {
                         </div>
                     ))}
                 </div>
+
+<BotonAdapt />
+
 
                 <div className={styles.divisionWrapper}>
                     <Image
