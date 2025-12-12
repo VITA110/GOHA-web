@@ -6,7 +6,7 @@ import styles from './Ubicaciones.module.css';
 const sucursales = [
     {
         id: 1,
-        nombre: 'Chiuahua, Chi.',
+        nombre: 'Chihuahua, Chi.',
         direccion: 'Blvrd Antonio Ortiz Mena 3400, Lomas del Santuario I Etapa, Campestre-Lomas, 31206 Chihuahua, Chih.',
         telefono: '+52 614 412 1803',
         horario: 'Lun - Vie: 8:00 - 18:00',

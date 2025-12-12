@@ -5,12 +5,13 @@ import styles from '../components/Nosotros.module.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Valores from '@/components/Valores';
+import BarrasDecorativas from '@/components/BarrasDecorativas';
 
 const contenidoSecciones = [
   {
     id: 1,
     titulo: "Nuestra Historia",
-    texto: "GOHA NETWORKS S. DE R.L. DE C.V. es una empresa mexicana especializada en ofrecer soluciones tecnológicas integrales para la industria y los negocios. Nos enfocamos en proporcionar productos y servicios que optimizan los procesos operativos de nuestros clientes, ayudándoles a aumentar su productividad, reducir costos y adaptarse a los desafíos tecnológicos del entorno actual. Con una sólida trayectoria en el sector, trabajamos principalmente con empresas del ámbito industrial y maquilador, brindando soporte confiable y soluciones personalizadas en hardware, software, impresión, redes, señalización digital y más.",
+    texto: "GOHA - International Operating Solutions S.A. de C.V. es una empresa mexicana especializada en ofrecer soluciones tecnológicas integrales para la industria y los negocios. Nos enfocamos en proporcionar productos y servicios que optimizan los procesos operativos de nuestros clientes, ayudándoles a aumentar su productividad, reducir costos y adaptarse a los desafíos tecnológicos del entorno actual. Con una sólida trayectoria en el sector, trabajamos principalmente con empresas del ámbito industrial y maquilador, brindando soporte confiable y soluciones personalizadas en hardware, software, impresión, redes, señalización digital y más.",
     imagen: "/assets/nosotros/historia.jpg",
     posicion: "derecha" // imagen a la derecha, texto a la izquierda
   },
@@ -33,20 +34,21 @@ const contenidoSecciones = [
 export default function Nosotros() {
   return (
     <>
+    <BarrasDecorativas />
       <head>
         <title>Sobre nosotros - GOHA Networks</title>
         <meta name="description" content="Conoce más sobre GOHA Networks, nuestra historia, misión, visión y valores. Líder en soluciones tecnológicas empresariales en Chihuahua." />
       </head>
       <Navbar visible={true} />
 
-      {/* Banner decorativo */}
+{/*       
       <div className={styles.bannerWrapper}>
         <img
           src="/assets/barra.svg"
           alt="Decoración superior"
           className={styles.bannerSVG}
         />
-      </div>
+      </div> */}
 
       <main className={styles.mainContainer}>
         {/* Encabezado de la página */}

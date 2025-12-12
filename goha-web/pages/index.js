@@ -9,9 +9,6 @@ import ProductosServicios from '@/components/ProductosServicios';
 import Lideres from '@/components/Lideres';
 import FraseFinal from '@/components/FraseFinal';
 import Footer from '@/components/Footer';
-import Ubicaciones from '@/components/Ubicaciones';
-import UbiActua from '@/components/UbiActua';
-import BotonAdapt from '@/components/BotonAdapt';
 
 
 export default function Home() {
