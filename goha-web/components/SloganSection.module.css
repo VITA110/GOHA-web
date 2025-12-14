@@ -1,33 +1,135 @@
 /* SloganSection.module.css */
 .container {
+  width: 100%;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.1rem;
-  padding: 4rem 1rem;
+  padding: 2rem;
   position: relative;
-  z-index: 1;
-  padding-bottom: 1rem;
-  padding-top: 10rem;
+}
+
+.content {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  text-align: center;
 }
 
 .logo {
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  animation: fadeInDown 1s ease-out;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
 }
 
 .texto {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.5));
+  gap: 1.5rem;
+  animation: fadeInUp 1s ease-out;
+  animation-delay: 0.3s;
+  animation-fill-mode: both;
 }
 
 .frase {
-  font-size: 2.2rem; /* Reducido de 2.9rem a 2.2rem */
+  font-size: 3.5rem;
   font-weight: 700;
-  color: #000000;
-  white-space: nowrap; /* Asegura que todo esté en una línea */
+  color: rgb(0, 0, 0);
+  margin: 0;
+  line-height: 1.2;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.descripcion {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.95);
+  margin: 0;
+  line-height: 1.6;
+  max-width: 800px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Animaciones */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Tablet */
+@media (max-width: 1024px) {
+  .frase {
+    font-size: 2.75rem;
+  }
+  
+  .descripcion {
+    font-size: 1.25rem;
+  }
+  
+  .content {
+    gap: 2.5rem;
+  }
+}
+
+/* Responsive Mobile */
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem;
+  }
+  
+  .content {
+    gap: 2rem;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .frase {
+    font-size: 2rem;
+  }
+  
+  .descripcion {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+}
+
+/* Responsive Small Mobile */
+@media (max-width: 480px) {
+  .frase {
+    font-size: 1.5rem;
+  }
+  
+  .descripcion {
+    font-size: 0.9rem;
+  }
+  
+  .content {
+    gap: 1.5rem;
+  }
 }
