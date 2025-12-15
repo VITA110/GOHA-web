@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import styles from './CarruselVertical.module.css';
-import FraseAccion from './FraseAccion';
 import SloganSection from './SloganSection';
 
 export default function CarruselVertical({ children }) {
@@ -8,10 +7,10 @@ export default function CarruselVertical({ children }) {
 
   // Array de imágenes - reemplaza con tus propias rutas
   const images = [
-    '/images/slide1.jpg',
-    '/images/slide2.jpg',
-    '/images/slide3.jpg',
-    '/images/slide4.jpg',
+    './imagenes/imagenfondo1.png',
+    './imagenes/imagenfondo2.png',
+    './imagenes/imagenfondo3.png',
+    './imagenes/soporte-ejemplo4.jpg',
   ];
 
   useEffect(() => {

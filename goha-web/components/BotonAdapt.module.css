@@ -130,12 +130,21 @@
   transform: scale(1.1) rotate(5deg);
 }
 
+.optionCard:hover .optionTitle{
+  color: #dc2626;
+  transition: color 0.3s ease-in-out ;
+}
+
 .optionTitle {
   font-size: 1.75rem;
   font-weight: bold;
   color: black;
   margin-bottom: 1rem;
+  transition: color 0.3s ease-in-out ;
+
 }
+
+
 
 .optionDescription {
   font-size: 1rem;

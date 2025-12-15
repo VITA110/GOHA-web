@@ -36,7 +36,7 @@ export default function Home() {
 
   return (
     <>
-      <BarrasDecorativas />
+      {/* <BarrasDecorativas /> */}
       <Navbar visible={showNavbar} />
 
       <main>
@@ -46,16 +46,18 @@ export default function Home() {
 
         </div>
         {/* <CarruselVertical /> */}
+
         <CarruselEmpresas />
-        <section id="SerPro" >
-        <ProductosServicios />
-        </section>
+        {/* <section id="servis"> */}
+          <ProductosServicios />
+        {/* </section> */}
+
         <div style={{ height: '25vh', background: '#ffffffff' }} />
         <Lideres />
         <div style={{ height: '25vh', background: '#ffffffff' }} />
-        <section id="ubi" >
+        {/* <section id="ubi" >
           {<Ubicaciones />}
-        </section>
+        </section> */}
 
 
         <FraseFinal />

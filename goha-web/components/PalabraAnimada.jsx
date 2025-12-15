@@ -8,15 +8,12 @@ export default function PalabraAnimada() {
   const [indice, setIndice] = useState(0);
 
   useEffect(() => {
-    // Si es la última palabra ("Conectan"), aplicamos un delay mayor
-    const delay = palabras[indice] === 'Conectan' ? 10000 : 1500;
-
-    const timeout = setTimeout(() => {
+    const interval = setInterval(() => {
       setIndice((prev) => (prev + 1) % palabras.length);
-    }, delay);
+    }, 5000); // 5 segundos
 
-    return () => clearTimeout(timeout);
-  }, [indice]);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <span className={styles.palabra} key={palabras[indice]}>

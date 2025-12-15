@@ -5,15 +5,16 @@ import styles from './Navbar.module.css';
 export default function Navbar({ visible }) {
   return (
     <header className={`${styles.wrapper} ${visible ? styles.visible : styles.hidden}`}>
-
-
       <nav className={styles.menu}>
-        <Link href="/nosotros" legacyBehavior>
-          <a className={styles.button}>Nosotros</a>
+
+        <Link href="/nosotros" className={styles.button}>
+          Nosotros
         </Link>
-        <Link href="#servis" legacyBehavior>
-          <a className={styles.button}>Sevicios</a>
+
+        <Link href="/#servis" className={styles.button}>
+          Servicios
         </Link>
+
         <Link href="/">
           <Image
             src="/assets/LogoColorAJUS.svg"
@@ -23,14 +24,15 @@ export default function Navbar({ visible }) {
             className={styles.logo}
           />
         </Link>
-        <Link href="/ubicaciones" legacyBehavior>
-          <a className={styles.button}>Ubicaciones</a>
+
+        <Link href="/ubicaciones" className={styles.button}>
+          Ubicaciones
         </Link>
 
-
-        <Link href="/contacto" legacyBehavior>
-          <a className={styles.button}>Contáctanos</a>
+        <Link href="/contacto" className={styles.button}>
+          Contáctanos
         </Link>
+
       </nav>
     </header>
   );

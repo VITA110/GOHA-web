@@ -6,8 +6,8 @@ import Image from 'next/image';
 import BotonAdapt from './BotonAdapt';
 
 const servicios = [
-    { 
-        icono: 'iconsPS/hardware.svg', 
+    {
+        icono: 'iconsPS/hardware.svg',
         texto: 'Hardware empresarial',
         imagen: '/imagenes/hardware-ejemplo.jpg',
         descripcion: 'Equipos de alto rendimiento para empresas',
@@ -18,8 +18,8 @@ const servicios = [
             'Soporte técnico 24/7'
         ]
     },
-    { 
-        icono: 'iconsPS/software.svg', 
+    {
+        icono: 'iconsPS/software.svg',
         texto: 'Software especializado',
         imagen: '/imagenes/software-ejemplo.jpg',
         descripcion: 'Soluciones de software para tu negocio',
@@ -30,8 +30,8 @@ const servicios = [
             'Actualizaciones incluidas'
         ]
     },
-    { 
-        icono: 'iconsPS/impresion.svg', 
+    {
+        icono: 'iconsPS/impresion.svg',
         texto: 'Impresión y consumibles',
         imagen: '/imagenes/impresion-ejemplo.jpg',
         descripcion: 'Suministros de impresión de calidad',
@@ -42,8 +42,8 @@ const servicios = [
             'Entrega programada'
         ]
     },
-    { 
-        icono: 'iconsPS/accesorios.svg', 
+    {
+        icono: 'iconsPS/accesorios.svg',
         texto: 'Accesorios y componentes',
         imagen: '/imagenes/componentes-ejemplo.jpg',
         descripcion: 'Complementos para tus equipos',
@@ -54,8 +54,8 @@ const servicios = [
             'Garantía extendida'
         ]
     },
-    { 
-        icono: 'iconsPS/proveeduria.svg', 
+    {
+        icono: 'iconsPS/proveeduria.svg',
         texto: 'Proveeduría MRO',
         imagen: '/imagenes/proveeduria-ejemplo.jpg',
         descripcion: 'Mantenimiento, Reparación y Operaciones',
@@ -66,8 +66,8 @@ const servicios = [
             'Inventario gestionado'
         ]
     },
-    { 
-        icono: 'iconsPS/impresoras.svg', 
+    {
+        icono: 'iconsPS/impresoras.svg',
         texto: 'Impresoras y equipos de cómputo',
         imagen: '/imagenes/impresora-ejemplo.jpg',
         descripcion: 'Equipos de impresión profesional',
@@ -78,8 +78,8 @@ const servicios = [
             'Servicio de instalación'
         ]
     },
-    { 
-        icono: 'iconsPS/codigo.svg', 
+    {
+        icono: 'iconsPS/codigo.svg',
         texto: 'Soluciones de código de barras',
         imagen: '/imagenes/codigo-ejemplo.jpg',
         descripcion: 'Automatización y control de inventario',
@@ -90,8 +90,8 @@ const servicios = [
             'Integración con ERP'
         ]
     },
-    { 
-        icono: 'iconsPS/senalizacion.svg', 
+    {
+        icono: 'iconsPS/senalizacion.svg',
         texto: 'Señalización digital',
         imagen: '/imagenes/senalizacion-ejemplo.jpg',
         descripcion: 'Pantallas y contenido dinámico',
@@ -110,7 +110,7 @@ export default function ProductosServicios() {
     return (
         <section className={styles.seccion}>
             <div className={styles.fondoWrapper}></div>
-            
+
             <div className={styles.contenido}>
                 <h2 className={styles.titulo}>
                     TODO LO QUE TU EMPRESA NECESITA, INTEGRADO EN UN SOLO LUGAR.
@@ -118,17 +118,17 @@ export default function ProductosServicios() {
 
                 <div className={styles.grid}>
                     {servicios.map((servicio, i) => (
-                        <div 
-                            key={i} 
+                        <div
+                            key={i}
                             className={styles.itemWrapper}
                             onMouseEnter={() => setHoveredIndex(i)}
                             onMouseLeave={() => setHoveredIndex(null)}
                         >
                             <div className={styles.item}>
-                                <Image 
-                                    src={`/${servicio.icono}`} 
-                                    alt={servicio.texto} 
-                                    width={32} 
+                                <Image
+                                    src={`/${servicio.icono}`}
+                                    alt={servicio.texto}
+                                    width={32}
                                     height={32}
                                 />
                                 <span>{servicio.texto}</span>
@@ -138,7 +138,7 @@ export default function ProductosServicios() {
                             {hoveredIndex === i && (
                                 <div className={styles.card}>
                                     <div className={styles.cardImageWrapper}>
-                                        <Image 
+                                        <Image
                                             src={servicio.imagen}
                                             alt={servicio.texto}
                                             width={320}
@@ -162,18 +162,19 @@ export default function ProductosServicios() {
                         </div>
                     ))}
                 </div>
+                <section id="servis">
 
-<BotonAdapt />
+                    <BotonAdapt />
+                </section >
 
-
-                <div className={styles.divisionWrapper}>
-                    <Image
-                        src="/DivisionS.svg"
-                        alt="División decorativa"
-                        fill
-                        className={styles.divisionImage}
-                    />
-                </div>
+                    <div className={styles.divisionWrapper}>
+                        <Image
+                            src="/DivisionS.svg"
+                            alt="División decorativa"
+                            fill
+                            className={styles.divisionImage}
+                        />
+                    </div>
             </div>
         </section>
     );

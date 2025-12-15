@@ -10,7 +10,7 @@ export default function SloganSection() {
       <div className={styles.content}>
         <div className={styles.logo}>
           <Image
-            src="/assets/logoColor.svg"
+            src="/assets/LogoB.svg"
             alt="Logo GOHA"
             width={230}
             height={230}
