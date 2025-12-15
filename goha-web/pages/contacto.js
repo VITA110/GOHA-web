@@ -44,6 +44,7 @@
 import React from 'react';
 import styles from './Contacto.module.css';
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 export default function ContactSection() {
   const contactInfo = [
@@ -135,6 +136,10 @@ export default function ContactSection() {
         </div>
       </div>
     </section>
+        <div style={{ height: '25vh', background: '#ffffffff' }} />
+
+    <Footer />      
+
     </>
   );
 }

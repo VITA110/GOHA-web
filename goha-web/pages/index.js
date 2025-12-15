@@ -52,9 +52,9 @@ export default function Home() {
           <ProductosServicios />
         {/* </section> */}
 
-        <div style={{ height: '25vh', background: '#ffffffff' }} />
+        {/* <div style={{ height: '25vh', background: '#ffffffff' }} /> */}
         <Lideres />
-        <div style={{ height: '25vh', background: '#ffffffff' }} />
+        {/* <div style={{ height: '25vh', background: '#ffffffff' }} /> */}
         {/* <section id="ubi" >
           {<Ubicaciones />}
         </section> */}

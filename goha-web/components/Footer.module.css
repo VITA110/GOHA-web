@@ -230,8 +230,7 @@
 }
 
 .iconoRed:hover {
-  filter: brightness(0.1); /* oscurece el ícono */
-  transform: scale(1.05);  /* pequeño zoom al pasar el mouse */
+  transform: scale(1.5);  /* pequeño zoom al pasar el mouse */
 }
 
 .linkColumna{
@@ -243,7 +242,7 @@
 }
 
 .linkColumna:hover {
-    color: #000000;
+    color: #f00d0d;
     
 }
 

@@ -34,7 +34,7 @@ export default function Footer() {
           <h3 className={styles.tituloColumna}>Accesos rapidos</h3>
           <ul className={styles.listaColumna}>
             <li>
-              <a href="/#SerPro" className={styles.linkColumna}>
+              <a href="/#servis" className={styles.linkColumna}>
                 Servicios y productos
               </a>
             </li>
@@ -44,7 +44,7 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="/impresion-consumibles" className={styles.linkColumna}>
+              <a href="/contacto" className={styles.linkColumna}>
                 Solicita algunos de nuestros Servicios
               </a>
             </li>
