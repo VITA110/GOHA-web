@@ -37,9 +37,9 @@ export default function BotonAdapt() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                   </svg>
                 </div>
-                <h3 className={styles.optionTitle}>Opción 1</h3>
+                <h3 className={styles.optionTitle}>Soporte</h3>
                 <p className={styles.optionDescription}>
-                  Descripción de la primera opción
+                  Solicita tu soporte técnico aquí. 
                 </p>
               </button>
 
@@ -52,9 +52,9 @@ export default function BotonAdapt() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                   </svg>
                 </div>
-                <h3 className={styles.optionTitle}>Opción 2</h3>
+                <h3 className={styles.optionTitle}>Equipo</h3>
                 <p className={styles.optionDescription}>
-                  Descripción de la segunda opción
+                  Adquiere el equipo que tu empresa necesita.
                 </p>
               </button>
             </div>
@@ -71,7 +71,7 @@ export default function BotonAdapt() {
             <div className={styles.formContent}>
               {selectedOption === 'opcion1' && (
                 <div>
-                  <h3 className={styles.formTitle}>Formulario Opción 1</h3>
+                  <h3 className={styles.formTitle}>Solicitud de soporte técnico</h3>
                   {<SoporteTecnicoContenido />}
                   {/* <p className={styles.placeholder}>Aquí va tu FormularioA</p> */}
                 </div>
@@ -79,7 +79,7 @@ export default function BotonAdapt() {
 
               {selectedOption === 'opcion2' && (
                 <div>
-                  <h3 className={styles.formTitle}>Formulario Opción 2</h3>
+                  <h3 className={styles.formTitle}>Solicitud de equipo</h3>
                   {<SolicitarEquipoContenido />}
                   {/* <p className={styles.placeholder}>Aquí va tu FormularioB</p> */}
                 </div>
