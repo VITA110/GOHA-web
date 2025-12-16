@@ -13,14 +13,14 @@ const contenidoSecciones = [
     titulo: "Nuestra Historia",
     texto: "GOHA - International Operating Solutions S.A. de C.V. es una empresa mexicana especializada en ofrecer soluciones tecnológicas integrales para la industria y los negocios. Nos enfocamos en proporcionar productos y servicios que optimizan los procesos operativos de nuestros clientes, ayudándoles a aumentar su productividad, reducir costos y adaptarse a los desafíos tecnológicos del entorno actual. Con una sólida trayectoria en el sector, trabajamos principalmente con empresas del ámbito industrial y maquilador, brindando soporte confiable y soluciones personalizadas en hardware, software, impresión, redes, señalización digital y más.",
     imagen: "/assets/nosotros/historia.jpg",
-    posicion: "derecha" // imagen a la derecha, texto a la izquierda
+    posicion: "derecha"
   },
   {
     id: 2,
     titulo: "Nuestra Misión",
     texto: "Empoderar a las empresas mexicanas con soluciones tecnológicas integrales que impulsen su crecimiento y competitividad. Nos especializamos en hardware empresarial, software especializado, y servicios de consultoría que transforman los desafíos tecnológicos en oportunidades de negocio. Creemos que la tecnología debe ser accesible, confiable y orientada a resultados tangibles.",
     imagen: "/assets/nosotros/mision.jpg",
-    posicion: "izquierda" // imagen a la izquierda, texto a la derecha
+    posicion: "izquierda"
   },
   {
     id: 3,
@@ -31,24 +31,50 @@ const contenidoSecciones = [
   }
 ];
 
+const estadisticas = [
+  {
+    icono: (
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="64" height="64">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+      </svg>
+    ),
+    label: "Clientes Satisfechos"
+  },
+  {
+    icono: (
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="64" height="64">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+      </svg>
+    ),
+    label: "Experiencia Comprobada"
+  },
+  {
+    icono: (
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="64" height="64">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+      </svg>
+    ),
+    label: "Soporte Continuo"
+  },
+  {
+    icono: (
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="64" height="64">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+      </svg>
+    ),
+    label: "Cobertura Regional"
+  }
+];
+
 export default function Nosotros() {
   return (
     <>
-    <BarrasDecorativas />
-      <head>
+      <BarrasDecorativas />
+      <Head>
         <title>Sobre nosotros - GOHA Networks</title>
         <meta name="description" content="Conoce más sobre GOHA Networks, nuestra historia, misión, visión y valores. Líder en soluciones tecnológicas empresariales en Chihuahua." />
-      </head>
+      </Head>
       <Navbar visible={true} />
-
-{/*       
-      <div className={styles.bannerWrapper}>
-        <img
-          src="/assets/barra.svg"
-          alt="Decoración superior"
-          className={styles.bannerSVG}
-        />
-      </div> */}
 
       <main className={styles.mainContainer}>
         {/* Encabezado de la página */}
@@ -64,8 +90,9 @@ export default function Nosotros() {
           {contenidoSecciones.map((seccion, index) => (
             <section
               key={seccion.id}
-              className={`${styles.seccionContenido} ${seccion.posicion === 'izquierda' ? styles.imagenIzquierda : styles.imagenDerecha
-                }`}
+              className={`${styles.seccionContenido} ${
+                seccion.posicion === 'izquierda' ? styles.imagenIzquierda : styles.imagenDerecha
+              }`}
             >
               {/* Columna de imagen */}
               <div className={styles.columnaImagen}>
@@ -98,33 +125,25 @@ export default function Nosotros() {
           ))}
         </div>
 
-        {/* Sección de estadísticas */}
+        {/* Sección de estadísticas solo con iconos */}
         <section className={styles.estadisticasSection}>
           <div className={styles.estadisticasGrid}>
-            <div className={styles.estadistica}>
-              <span className={styles.numero}>+1000</span>
-              <span className={styles.label}>Clientes atendidos</span>
-            </div>
-            <div className={styles.estadistica}>
-              <span className={styles.numero}>+30</span>
-              <span className={styles.label}>Años de Experiencia</span>
-            </div>
-            <div className={styles.estadistica}>
-              <span className={styles.numero}>24/7</span>
-              <span className={styles.label}>Soporte Técnico</span>
-            </div>
-            <div className={styles.estadistica}>
-              <span className={styles.numero}>2</span>
-              <span className={styles.label}>Sucursales</span>
-            </div>
+            {estadisticas.map((stat, index) => (
+              <div key={index} className={styles.estadistica}>
+                <div className={styles.iconoWrapper}>
+                  {stat.icono}
+                </div>
+                <span className={styles.label}>{stat.label}</span>
+              </div>
+            ))}
           </div>
         </section>
       </main>
-          <Valores  />
-        <div style={{ height: '25vh', background: '#ffffffff' }} />
+      
+      <Valores />
+      <div style={{ height: '25vh', background: '#ffffffff' }} />
 
       <Footer />
     </>
   );
 }
-

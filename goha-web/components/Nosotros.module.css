@@ -201,7 +201,7 @@
 
 /* === SECCIÓN ESTADÍSTICAS === */
 .estadisticasSection {
-  background: linear-gradient(135deg, #5e5e5e 0%,#918c8c 50%, #d00202 100%);
+  background: linear-gradient(135deg, #5e5e5e 0%,#918c8c 50%, #d002029f 100%);
   border-radius: 25px;
   ;
   padding: 60px 40px;
@@ -376,5 +376,101 @@
   .estadisticasSection {
     padding: 30px 15px;
     margin: 60px 0 80px;
+  }
+}
+
+
+.estadisticasGrid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
+}
+
+.estadistica {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  padding: 2.5rem 2rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 1rem;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.estadistica:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: #dc2626;
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(220, 38, 38, 0.2);
+}
+
+.iconoWrapper {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+  border-radius: 50%;
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(220, 38, 38, 0.3);
+}
+
+.estadistica:hover .iconoWrapper {
+  transform: scale(1.15) rotate(5deg);
+  box-shadow: 0 15px 40px rgba(220, 38, 38, 0.5);
+}
+
+.iconoWrapper svg {
+  width: 50px;
+  height: 50px;
+}
+
+.label {
+  font-size: 1.25rem;
+  color: white;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .estadisticasSection {
+    padding: 3rem 1rem;
+  }
+  
+  .estadisticasGrid {
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  
+  .estadistica {
+    padding: 2rem 1.5rem;
+    gap: 1rem;
+  }
+  
+  .iconoWrapper {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .iconoWrapper svg {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .label {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .estadisticasGrid {
+    grid-template-columns: 1fr;
   }
 }
