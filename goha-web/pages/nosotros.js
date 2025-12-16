@@ -80,9 +80,9 @@ export default function Nosotros() {
         {/* Encabezado de la página */}
         <header className={styles.headerSection}>
           <h1 className={styles.pageTitle}>Sobre Nosotros</h1>
-          <p className={styles.pageSubtitle}>
+          {/* <p className={styles.pageSubtitle}>
             Conoce la historia y valores que nos impulsan a ser líderes en soluciones tecnológicas
-          </p>
+          </p> */}
         </header>
 
         {/* Secciones alternadas */}
