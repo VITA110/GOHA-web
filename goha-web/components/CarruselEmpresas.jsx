@@ -6,7 +6,7 @@ const empresas = [
   { logo: 'logos/Microsoft.svg', nombre: 'Microsoft', pdf: '/catalogos/microsoft-catalogo.pdf' },
   { logo: 'logos/HP.svg', nombre: 'HP', pdf: '/catalogos/hp-catalogo.pdf' },
   { logo: 'logos/Adobe.svg', nombre: 'Adobe', pdf: '/catalogos/adobe-catalogo.pdf' },
-  { logo: '/logos/actualizados/Dell2.svg', nombre: 'Dell', pdf: '' },
+  { logo: '/logos/actualizados/DELLg.svg', nombre: 'Dell', pdf: '' },
   { logo: '/logos/actualizados/elo.png', nombre: 'ELO TOUCH', pdf: '' },
   { logo: '/logos/actualizados/EC.svg', nombre: 'Epcom', pdf: '' },
   { logo: '/logos/actualizados/HWac.svg', nombre: 'Honeywell', pdf: '' },

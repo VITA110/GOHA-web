@@ -12,8 +12,8 @@ export default function SloganSection() {
           <Image
             src="/assets/LogoB.svg"
             alt="Logo GOHA"
-            width={230}
-            height={230}
+            width= {280}
+            height={280}
           />
         </div>
 
