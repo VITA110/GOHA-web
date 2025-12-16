@@ -5,7 +5,7 @@ import styles from './Ubicaciones.module.css';
 const sucursales = [
     {
         id: 1,
-        nombre: 'Chiuahua, Chi.',
+        nombre: 'Chiuahua, Chih.',
         direccion: 'Blvrd Antonio Ortiz Mena 3400, Lomas del Santuario I Etapa, Campestre-Lomas, 31206 Chihuahua, Chih.',
         telefono: '+52 614 412 1803',
         horario: 'Lun - Vie: 8:00 - 18:00',
@@ -14,7 +14,7 @@ const sucursales = [
     },
     {
         id: 2,
-        nombre: 'Cd. Juárez, Chih.',
+        nombre: 'El paso, Texas.',
         direccion: '11450 James Watt Dr a5, El Paso, TX 79936, Estados Unidos.',
         telefono: '+1 915 234 9147',
         horario: 'Lun - Vie: 9:00 - 16:00',

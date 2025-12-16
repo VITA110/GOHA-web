@@ -101,7 +101,7 @@ export default function Footer() {
       {/* Copyright */}
       <div className={styles.copyrightWrapper}>
         <p className={styles.copyright}>
-          © 2025 GOHA NETWORKS S. DE R.L. DE C.V. Todos los derechos reservados.
+          © 2025 GOHA - International Operating Solutions S.A. de C.V.
         </p>
       </div>
     </footer>
