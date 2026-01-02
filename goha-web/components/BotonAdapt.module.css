@@ -87,8 +87,8 @@
 }
 
 .optionCard {
-  background-color: white;
-  border: 3px solid #e5e7eb;
+  background: linear-gradient(180deg, #ffffff 0%, #dcdcdc 100%);
+  border: 2px solid #a10000;
   border-radius: 1rem;
   padding: 3rem 2rem;
   cursor: pointer;

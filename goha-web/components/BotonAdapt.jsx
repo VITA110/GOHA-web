@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styles from './BotonAdapt.module.css';
-// Importa tus componentes de formularios aquí
 import SoporteTecnicoContenido from '@/components/servicios/soportetecnico/SoporteTecnicoContenido';
 import SolicitarEquipoContenido from '@/components/servicios/solicitarequipo/SolicitarEquipoContenido';
 
@@ -73,7 +72,6 @@ export default function BotonAdapt() {
                 <div>
                   <h3 className={styles.formTitle}>Solicitud de soporte técnico</h3>
                   {<SoporteTecnicoContenido />}
-                  {/* <p className={styles.placeholder}>Aquí va tu FormularioA</p> */}
                 </div>
               )}
 
@@ -81,7 +79,6 @@ export default function BotonAdapt() {
                 <div>
                   <h3 className={styles.formTitle}>Solicitud de equipo</h3>
                   {<SolicitarEquipoContenido />}
-                  {/* <p className={styles.placeholder}>Aquí va tu FormularioB</p> */}
                 </div>
               )}
             </div>

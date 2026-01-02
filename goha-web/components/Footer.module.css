@@ -197,12 +197,6 @@
     padding: 16px;
 }
 
-
-.listaColumna li:hover {
-    color: #000000;
-    font-weight: 600;
-}
-
 /* === COPYRIGHT === */
 .copyrightWrapper {
     position: absolute;
@@ -224,28 +218,47 @@
     display: inline-block;
 }
 
-.iconoRed {
-  display: inline-block;
-  transition: filter 0.3s ease, transform 0.3s ease;
-}
-
-.iconoRed:hover {
-  transform: scale(1.5);  /* pequeño zoom al pasar el mouse */
-}
-
 .linkColumna{
     text-decoration: none;
-    font-weight: 600;
-    font-size: 18px;
+    font-weight: 200;
+    font-size: 14px;
     transition: ease-in-out 0.4s;
     color: #ffffff;
 }
 
-.linkColumna:hover {
-    color: #f00d0d;
-    
+.linkColumna {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+  padding: 8px 0;
 }
 
+.linkColumna:hover {
+  color: #ff0000;
+  transform: translateX(20px);
+}
+
+.iconoLink {
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.linkColumna:hover .iconoLink {
+  transform: scale(1.8);
+}
+
+/* Estilos existentes para iconos de redes sociales */
+.iconoRed {
+  display: inline-flex;
+  transition: transform 0.3s ease;
+}
+
+.iconoRed:hover {
+  transform: scale(1.4);
+}
 
 /* === RESPONSIVE === */
 @media (max-width: 768px) {
