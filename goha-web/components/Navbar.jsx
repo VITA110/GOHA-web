@@ -17,7 +17,7 @@ export default function Navbar({ visible }) {
 
         <Link href="/">
           <Image
-            src="/assets/LogoColorAJUS.svg"
+            src="/assets/LogoB.svg"
             alt="GOHA logo"
             width={40}
             height={40}
