@@ -75,6 +75,7 @@
 .item {
     display: flex;
     flex-direction: column;
+    background: linear-gradient(135deg, #ffffff 0%, #a2a2a2 100%);
     width: 100%;
     align-items: center;
     justify-content: center;

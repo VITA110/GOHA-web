@@ -2,12 +2,12 @@
 .soporteTecnicoContenido {
   min-height: 80vh;
   background-color: white;
-  padding: 2rem; /* Padding por defecto */
+  padding: 2rem; 
   padding-bottom: 0rem;
 }
 
 .contenidoContainer {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
   background-color: white;
 }

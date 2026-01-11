@@ -3,7 +3,7 @@ import styles from './FormularioSoporteTecnico.module.css';
 import CuadroFlotanteSoporte from './CuadroFlotanteSoporte';
 
 export default function FormularioSoporteTecnico({ 
-  titulo = "Soporte Técnico", 
+  titulo = "TEXTO", 
   icono = "?",
   onSubmit,
   className = ""
@@ -86,14 +86,14 @@ export default function FormularioSoporteTecnico({
           <h2 className={styles.formularioTitulo}>
             {titulo}
             <div className={styles.tituloIconoContainer}>
-              <button 
+              {/* <button 
                 type="button"
                 className={styles.tituloIcono}
                 onClick={toggleTooltip}
                 aria-label="Mostrar instrucciones de soporte"
               >
                 <span>{icono}</span>
-              </button>
+              </button> */}
             </div>
           </h2>
         </div>
@@ -174,7 +174,7 @@ export default function FormularioSoporteTecnico({
                 className={styles.formSelect}
                 required
               >
-                <option value="">Seleccionar tipo de soporte</option>
+                {/* <option value="">Seleccionar tipo de soporte</option> */}
                 <option value="instalacion-software">Instalación de Software</option>
                 <option value="configuracion-equipos">Configuración de Equipos</option>
                 <option value="mantenimiento-preventivo">Mantenimiento Preventivo</option>

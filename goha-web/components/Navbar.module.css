@@ -1,6 +1,6 @@
 .wrapper {
   opacity: 0;
-  background: linear-gradient(180deg, #767676 0%, #232323 100%);
+  background: linear-gradient(180deg, #9b9b9b 0%, #4c4c4c 100%);
   /* border: 2px solid #000000; */
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -41,7 +41,7 @@
   height: 80px;
   width: 80px;
   cursor: pointer;
-  margin: 3px;
+  margin: 1px;
   padding-left: 30px;
   transition: transform 0.3s ease-in-out;
    transition: all 0.3s ease-in-out;

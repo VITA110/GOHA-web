@@ -27,23 +27,23 @@ export default function SolicitarEquipoContenido() {
     <div className={styles.soporteEquipoContenido}>
       <div className={styles.contenidoContainer}>
 
-        <div className={styles.contenidoGrid}>
+        {/* <div className={styles.contenidoGrid}> */}
           {/* Galería de Imágenes de Equipos */}
-          <div className={styles.contenidoImagenes}>
+          {/* <div className={styles.contenidoImagenes}>
             <SeccionImagenEquipo 
               images={images}
             />
-          </div>
+          </div> */}
 
           {/* Formulario de Solicitud de Equipo */}
           <div className={styles.contenidoFormulario}>
             <FormularioSoporteEquipo 
-              titulo="Solicitar Equipo"
+              titulo=""
               icono="?"
               onSubmit={handleFormSubmit}
             />
           </div>
-        </div>
+        {/* </div> */}
 
         {/* Nota informativa centrada debajo de todo */}
         <NotaInformativaEquipo />

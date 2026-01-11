@@ -19,8 +19,8 @@ export default function Navbar({ visible }) {
           <Image
             src="/assets/LogoB.svg"
             alt="GOHA logo"
-            width={40}
-            height={40}
+            width={20}
+            height={20}
             className={styles.logo}
           />
         </Link>

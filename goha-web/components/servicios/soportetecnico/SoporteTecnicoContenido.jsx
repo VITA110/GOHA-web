@@ -27,23 +27,23 @@ export default function SoporteTecnicoContenido() {
     <div className={styles.soporteTecnicoContenido}>
       <div className={styles.contenidoContainer}>
 
-        <div className={styles.contenidoGrid}>
+        {/* <div className={styles.contenidoGrid}> */}
           {/* Galería de Imágenes de Soporte Técnico */}
-          <div className={styles.contenidoImagenes}>
+          {/* <div className={styles.contenidoImagenes}>
             <SeccionImagenSoporte 
               images={images}
             />
-          </div>
+          </div> */}
 
           {/* Formulario de Soporte Técnico */}
           <div className={styles.contenidoFormulario}>
             <FormularioSoporteTecnico 
-              titulo="Soporte Técnico"
+              titulo=""
               icono="?"
               onSubmit={handleFormSubmit}
             />
           </div>
-        </div>
+        {/* </div> */}
 
         {/* Nota informativa centrada debajo de todo */}
         <NotaInformativaSoporte />

@@ -5,7 +5,7 @@
 }
 
 .contenidoContainer {
-  max-width: 1300px;
+  /* max-width: 50rem; */
   margin: 0 auto;
   background-color: white; /* Fondo siempre blanco */
 }

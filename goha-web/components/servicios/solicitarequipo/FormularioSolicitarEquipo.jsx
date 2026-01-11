@@ -86,14 +86,14 @@ export default function FormularioSolicitarEquipo({
           <h2 className={styles.formularioTitulo}>
             {titulo}
             <div className={styles.tituloIconoContainer}>
-              <button 
+              {/* <button 
                 type="button"
                 className={styles.tituloIcono}
                 onClick={toggleTooltip}
                 aria-label="Mostrar instrucciones de equipo"
               >
                 <span>{icono}</span>
-              </button>
+              </button> */}
             </div>
           </h2>
         </div>
