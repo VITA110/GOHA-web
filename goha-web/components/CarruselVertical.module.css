@@ -149,3 +149,60 @@
     height: 90vh;
   }
 }
+
+.sealWrapper {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  transition: all 0.5s ease;
+}
+
+.sealVisible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.sealHidden {
+  opacity: 0;
+  transform: translateY(-20px) scale(0.9);
+}
+
+.seal {
+  background: rgba(255, 255, 255, 0.326);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  min-width: 80px;
+}
+
+.sealImage {
+  width: 120px !important;
+  height: 120px !important;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.sealText {
+  font-size: 0.75rem;
+  color: #666;
+  margin: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.sealCompany {
+  font-size: 1rem;
+  color: #000;
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.2;
+}
