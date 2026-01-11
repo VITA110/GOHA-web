@@ -45,6 +45,7 @@ import React from 'react';
 import styles from './Contacto.module.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import BarrasDecorativas from '@/components/BarrasDecorativas';
 
 export default function ContactSection() {
   const contactInfo = [
@@ -71,17 +72,6 @@ export default function ContactSection() {
     {
       icon: (
         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="32" height="32">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-        </svg>
-      ),
-      title: 'Ubicación',
-      details: ['Chihuahua, Chihuahua', 'México'],
-      link: null
-    },
-    {
-      icon: (
-        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="32" height="32">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
       ),
@@ -100,6 +90,7 @@ export default function ContactSection() {
           <h2 className={styles.title}>
             Contáctanos
           </h2>
+      <BarrasDecorativas />
           <div className={styles.divider}></div>
           <p className={styles.description}>
             Estamos aquí para ayudarte. No dudes en ponerte en contacto con nosotros

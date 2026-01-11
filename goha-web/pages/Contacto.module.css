@@ -1,5 +1,5 @@
 .contactSection {
-  min-height: 100vh;
+  min-height: 70vh;
   background-color: white;
   padding: 10rem 0rem;
   padding-bottom: 0rem;
@@ -42,23 +42,19 @@
   line-height: 1.6;
 }
 
-/* Contact Cards Grid */
+/* Contact Cards Grid - CENTRADO para 3 tarjetas */
 .cardsGrid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-  margin-bottom: 4rem;
+  display: flex;
+  gap: 2rem;
+  /* margin-bottom: 4rem; */
+  justify-content: center;
+  align-items: stretch;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .cardsGrid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .cardsGrid {
-    grid-template-columns: repeat(4, 1fr);
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -68,6 +64,15 @@
   border-radius: 0.5rem;
   padding: 2rem;
   transition: all 0.3s ease;
+  width: 280px;
+  min-height: 240px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    max-width: 320px;
+  }
 }
 
 .card:hover {
