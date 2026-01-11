@@ -3,12 +3,12 @@ import styles from './Lideres.module.css';
 import Image from 'next/image';
 
 const empresas = [
-  { nombre: 'Jabil', logo: '/logos/lideres/Jabil.svg' },
-  { nombre: 'Intermex', logo: '/logos/lideres/ZF.svg' },
-  { nombre: 'Foxconn', logo: '/logos/lideres/Foxconn.svg' },
-  { nombre: 'Interceramic', logo: '/logos/lideres/Interceramic.svg' },
-  { nombre: 'Lutron', logo: '/logos/lideres/HW.svg' },
-  { nombre: 'Wistron', logo: '/logos/lideres/Wistron.svg' },
+  { nombre: 'Jabil', logo: '/logos/lideres/JabilL.svg' },
+  { nombre: 'Lutron', logo: '/logos/lideres/HoneywellL.svg' },
+  { nombre: 'Foxconn', logo: '/logos/lideres/FoxconnL.svg' },
+  { nombre: 'Interceramic', logo: '/logos/lideres/InterceramicL.svg' },
+  { nombre: 'Intermex', logo: '/logos/lideres/ZFL.svg' },
+  { nombre: 'Wistron', logo: '/logos/lideres/WistronL.svg' },
 ];
 
 export default function Lideres() {
