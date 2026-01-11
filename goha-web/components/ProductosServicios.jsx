@@ -4,6 +4,7 @@ import { useState } from 'react';
 import styles from './ProductosServicios.module.css';
 import Image from 'next/image';
 import BotonAdapt from './BotonAdapt';
+import BarrasDecorativas from './BarrasDecorativas';
 
 const servicios = [
     {
@@ -115,7 +116,7 @@ export default function ProductosServicios() {
                 <h2 className={styles.titulo}>
                     TODO LO QUE TU EMPRESA NECESITA, INTEGRADO EN UN SOLO LUGAR.
                 </h2>
-
+<BarrasDecorativas />
                 <div className={styles.grid}>
                     {servicios.map((servicio, i) => (
                         <div
