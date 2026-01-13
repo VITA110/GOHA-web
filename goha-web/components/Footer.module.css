@@ -116,7 +116,8 @@
     padding-left: 0rem;
     /* Alineación de texto a la izquierda */
 }
-/* Escalonado */
+
+/* Escalonado (como antes, más marcado en desktop) */
 .columna:first-child li:nth-child(1) {
     margin-left: 0;
 }
@@ -135,9 +136,9 @@
     .columna:first-child li:nth-child(3) { margin-left: 32px; }
 }
 
-
 .columna:last-child {
     text-align: right;
+    transform: translateX(120px); /* NUEVO: mueve distribuidores más a la derecha */
 }
 
 .columna:last-child h3 {
@@ -214,6 +215,36 @@
 
 .listaColumna ul {
     padding: 16px;
+}
+
+/* === SÍGUENOS EN LÍNEA (CENTRO) === */
+.redesEnLinea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+    margin-top: 10px;
+}
+
+.redesEnLinea li {
+    margin-bottom: 0; /* para que no se apilen */
+}
+
+/* === DISTRIBUIDORES 2x2 (DERECHA) === */
+.imagenDistribuidorGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px 22px; /* filas / columnas */
+    justify-items: center;
+    align-items: center;
+    margin-top: 10px;
+    padding-right: 1rem; /* para que respete la alineación derecha */
+}
+
+.imagenDistribuidor {
+  width: 250px !important;
+  height: auto !important;
+  object-fit: contain;
 }
 
 /* === COPYRIGHT === */
@@ -308,6 +339,26 @@
         font-size: 11px;
         padding: 6px 15px;
     }
+
+    /* Síguenos en móvil: puede envolver si hace falta */
+    .redesEnLinea {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    /* Distribuidores en móvil: que no se rompa */
+    .imagenDistribuidorGrid {
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+        padding-right: 0;
+    }
+
+    
+
+    /* NUEVO: en móvil no desplazamos la columna derecha */
+    .columna:last-child {
+        transform: none;
+    }
 }
 
 @media (max-width: 480px) {
@@ -318,5 +369,9 @@
     .copyright {
         font-size: 10px;
         padding: 5px 12px;
+    }
+
+    .imagenDistribuidorGrid {
+        grid-template-columns: 1fr;
     }
 }

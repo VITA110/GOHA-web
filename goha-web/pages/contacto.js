@@ -76,7 +76,7 @@ export default function ContactSection() {
         </svg>
       ),
       title: 'Horario',
-      details: ['Lun - Vie: 9:00 - 18:00', 'Sáb: 10:00 - 14:00'],
+      details: ['Lun - Vie: 8:00 - 18:00'],
       link: null
     }
   ];

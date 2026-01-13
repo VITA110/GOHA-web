@@ -30,18 +30,19 @@ export default function Footer() {
 
       {/* Contenido en 3 columnas */}
       <div className={styles.contenidoWrapper}>
+        {/* IZQUIERDA - Accesos rápidos (escalonado) */}
         <div className={styles.columna}>
           <h3 className={styles.tituloColumna}>Accesos rápidos</h3>
           <ul className={styles.listaColumna}>
             <li>
               <a href="/#servis" className={styles.linkColumna}>
-                <svg 
-                  className={styles.iconoLink} 
-                  width="20" 
-                  height="20" 
-                  viewBox="0 0 24 24" 
-                  fill="none" 
-                  stroke="currentColor" 
+                <svg
+                  className={styles.iconoLink}
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
                   strokeWidth="2"
                 >
                   <rect x="2" y="3" width="20" height="14" rx="2" />
@@ -53,13 +54,13 @@ export default function Footer() {
             </li>
             <li>
               <a href="/nosotros" className={styles.linkColumna}>
-                <svg 
-                  className={styles.iconoLink} 
-                  width="20" 
-                  height="20" 
-                  viewBox="0 0 24 24" 
-                  fill="none" 
-                  stroke="currentColor" 
+                <svg
+                  className={styles.iconoLink}
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
                   strokeWidth="2"
                 >
                   <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
@@ -72,13 +73,13 @@ export default function Footer() {
             </li>
             <li>
               <a href="/contacto" className={styles.linkColumna}>
-                <svg 
-                  className={styles.iconoLink} 
-                  width="20" 
-                  height="20" 
-                  viewBox="0 0 24 24" 
-                  fill="none" 
-                  stroke="currentColor" 
+                <svg
+                  className={styles.iconoLink}
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
                   strokeWidth="2"
                 >
                   <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
@@ -90,26 +91,11 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        
-        <div className={styles.columna}>
-          <h3 className={styles.tituloColumna}>Distribuidores autorizados</h3>
-          <ul className={styles.listaColumna}>
-          </ul>
-          {/* Imagen de Zebra */}
-          <div className={styles.imagenDistribuidor}>
-            <Image
-              src="/assets/zebraC.png"
-              alt="Distribuidor Zebra"
-              width={250}
-              height={80}
-            />
-          </div>
-        </div>
 
-        {/* Columna Derecha - Más contenido */}
+        {/* CENTRO - Síguenos (4 iconos en línea, repetidos por ahora) */}
         <div className={styles.columna}>
           <h3 className={styles.tituloColumna}>Síguenos</h3>
-          <ul className={styles.listaColumna}>
+          <ul className={`${styles.listaColumna} ${styles.redesEnLinea}`}>
             <li>
               <a
                 href="https://www.facebook.com/Goha.IOS"
@@ -121,6 +107,7 @@ export default function Footer() {
                 <Image src="/assets/Facebook.svg" alt="Facebook" width={44} height={44} />
               </a>
             </li>
+
             <li>
               <a
                 href="https://www.instagram.com/goha.ios"
@@ -132,7 +119,69 @@ export default function Footer() {
                 <Image src="/assets/Instagram.svg" alt="Instagram" width={44} height={44} />
               </a>
             </li>
+
+            {/* Repetidos para tener 4 (mientras te pasan los otros 2 iconos) */}
+            <li>
+              <a
+                href="https://www.facebook.com/Goha.IOS"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className={styles.iconoRed}
+              >
+                <Image src="/assets/tiktok.png" alt="TikTok" width={60} height={60} />
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.instagram.com/goha.ios"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className={styles.iconoRed}
+              >
+                <Image src="/assets/linkedin.png" alt="LinkedIn" width={60} height={60} />
+              </a>
+            </li>
           </ul>
+        </div>
+
+        {/* DERECHA - Distribuidores autorizados (2x2) */}
+        <div className={styles.columna}>
+          <h3 className={styles.tituloColumna}>Distribuidores autorizados</h3>
+          <ul className={styles.listaColumna}></ul>
+
+          <div className={styles.imagenDistribuidorGrid}>
+            <Image
+              src="/assets/zebraAL.png"
+              alt="Distribuidor Zebra AL"
+              width={220}
+              height={70}
+              className={styles.distribuidorImg}
+            />
+            <Image
+              src="/assets/zebraAP.png"
+              alt="Distribuidor Zebra AP"
+              width={220}
+              height={70}
+              className={styles.distribuidorImg}
+            />
+            <Image
+              src="/assets/zebraCA.png"
+              alt="Distribuidor Zebra CA"
+              width={220}
+              height={70}
+              className={styles.distribuidorImg}
+            />
+            <Image
+              src="/assets/zebraRF.png"
+              alt="Distribuidor Zebra RF"
+              width={220}
+              height={70}
+              className={styles.distribuidorImg}
+            />
+          </div>
         </div>
       </div>
 
