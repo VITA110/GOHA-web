@@ -125,6 +125,9 @@ export default function Nosotros() {
           ))}
         </div>
 
+        {/* Valores ahora va ANTES de estadísticas */}
+        <Valores />
+
         {/* Sección de estadísticas solo con iconos */}
         <section className={styles.estadisticasSection}>
           <div className={styles.estadisticasGrid}>
@@ -139,9 +142,9 @@ export default function Nosotros() {
           </div>
         </section>
       </main>
-      
-      <Valores />
-      <div style={{ height: '25vh', background: '#ffffffff' }} />
+
+      {/* Spacer pequeño para que el footer respire (antes era 25vh) */}
+      <div style={{ height: '6vh', background: '#ffffffff' }} />
 
       <Footer />
     </>

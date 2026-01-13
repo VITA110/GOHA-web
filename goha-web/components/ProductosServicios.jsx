@@ -13,10 +13,10 @@ const servicios = [
         imagen: '/imagenes/hardware-ejemplo.jpg',
         descripcion: 'Equipos de alto rendimiento para empresas',
         caracteristicas: [
-            'Servidores empresariales',
-            'Estaciones de trabajo',
-            'Equipos certificados',
-            'Soporte técnico 24/7'
+            'Servidores, data centers',
+            'Workstations',
+            'Equipos empresariales',
+            'Soporte técnico'
         ]
     },
     {
@@ -25,10 +25,10 @@ const servicios = [
         imagen: '/imagenes/software-ejemplo.jpg',
         descripcion: 'Soluciones de software para tu negocio',
         caracteristicas: [
-            'Licencias corporativas',
+            'Licenciamiento corporativo',
             'Software de gestión',
-            'Herramientas de productividad',
-            'Actualizaciones incluidas'
+            'Herramientas de productividad'
+            
         ]
     },
     {
@@ -38,9 +38,9 @@ const servicios = [
         descripcion: 'Suministros de impresión de calidad',
         caracteristicas: [
             'Tintas y toners originales',
-            'Papel especializado',
-            'Consumibles compatibles',
-            'Entrega programada'
+            'Papel y etiquetas especializadas',
+            'Entregas programadas'
+            
         ]
     },
     {
@@ -49,10 +49,9 @@ const servicios = [
         imagen: '/imagenes/componentes-ejemplo.jpg',
         descripcion: 'Complementos para tus equipos',
         caracteristicas: [
-            'Periféricos de calidad',
-            'Componentes de reemplazo',
-            'Cables y conectores',
-            'Garantía extendida'
+            'Accesorios y perifericos',
+            'Cables, adaptadores y conectores',
+            'Garantías extendidas'
         ]
     },
     {
@@ -75,7 +74,7 @@ const servicios = [
         caracteristicas: [
             'Impresoras multifuncionales',
             'Equipos de alta velocidad',
-            'Computadoras empresariales',
+            'Computo empresarial',
             'Servicio de instalación'
         ]
     },
@@ -88,7 +87,8 @@ const servicios = [
             'Lectores de código de barras',
             'Impresoras de etiquetas',
             'Software de gestión',
-            'Integración con ERP'
+            'Computo móvil',
+            'RFID'
         ]
     },
     {
@@ -97,9 +97,9 @@ const servicios = [
         imagen: '/imagenes/senalizacion-ejemplo.jpg',
         descripcion: 'Pantallas y contenido dinámico',
         caracteristicas: [
-            'Pantallas profesionales',
+            'Monitores profesionales',
             'Software de gestión',
-            'Contenido personalizado',
+            'Video walls, totems , etc',
             'Soporte técnico'
         ]
     },
@@ -114,9 +114,9 @@ export default function ProductosServicios() {
 
             <div className={styles.contenido}>
                 <h2 className={styles.titulo}>
-                    TODO LO QUE TU EMPRESA NECESITA, INTEGRADO EN UN SOLO LUGAR.
+                    TODO LO QUE TU EMPRESA NECESITA INTEGRADO EN UN SOLO LUGAR.
                 </h2>
-<BarrasDecorativas />
+                {/*<BarrasDecorativas />*/}
                 <div className={styles.grid}>
                     {servicios.map((servicio, i) => (
                         <div
@@ -129,8 +129,8 @@ export default function ProductosServicios() {
                                 <Image
                                     src={`/${servicio.icono}`}
                                     alt={servicio.texto}
-                                    width={32}
-                                    height={32}
+                                    width={48}
+                                    height={48}
                                 />
                                 <span>{servicio.texto}</span>
                             </div>

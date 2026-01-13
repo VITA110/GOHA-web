@@ -16,7 +16,7 @@ const valoresData = [
     titulo: "Soporte al Cliente",
     icono: "🎧",
     imagen: "/assets/valores/soporte.jpg", 
-    descripcion: "Nuestro compromiso va más allá de la venta. Ofrecemos soporte técnico 24/7 con especialistas certificados que entienden tu negocio. Cada cliente tiene acceso directo a nuestro equipo de expertos, garantizando respuestas rápidas y soluciones efectivas que minimizan el tiempo de inactividad y maximizan la productividad.",
+    descripcion: "Nuestro compromiso va más allá de la venta. Ofrecemos soporte técnico con especialistas certificados que entienden tu negocio. Cada cliente tiene acceso directo a nuestro equipo de expertos, garantizando respuestas rápidas y soluciones efectivas que minimizan el tiempo de inactividad y maximizan la productividad.",
     color: "#ff4747ff"
   },
   {
