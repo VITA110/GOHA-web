@@ -6,25 +6,25 @@ const valoresData = [
   {
     id: 1,
     titulo: "Honestidad",
-    icono: "🤝",
+    icono: "🤲🏻",
     imagen: "/assets/valores/honestidad.jpg",
     descripcion: "La transparencia y honestidad son la base de todas nuestras relaciones comerciales. Creemos en comunicar de manera clara los beneficios, limitaciones y costos reales de nuestras soluciones. Nuestros clientes confían en nosotros porque siempre decimos la verdad, incluso cuando no es la respuesta que esperan escuchar.",
     color: "#ff7070ff"
   },
   {
     id: 2,
-    titulo: "Soporte al Cliente",
-    icono: "🎧",
+    titulo: "Colaboración",
+    icono: "🤝",
     imagen: "/assets/valores/soporte.jpg", 
-    descripcion: "Nuestro compromiso va más allá de la venta. Ofrecemos soporte técnico con especialistas certificados que entienden tu negocio. Cada cliente tiene acceso directo a nuestro equipo de expertos, garantizando respuestas rápidas y soluciones efectivas que minimizan el tiempo de inactividad y maximizan la productividad.",
+    descripcion: "Fomentamos el trabajo en equipo y la comunicación entre todas las áreas de la empresa para ofrecer soluciones eficientes y completas. La colaboración nos permite compartir conocimientos, optimizar procesos y brindar un mejor servicio al cliente.",
     color: "#ff4747ff"
   },
   {
     id: 3,
-    titulo: "Seguridad",
-    icono: "🔒",
+    titulo: "Profesionalismo",
+    icono: "🌟",
     imagen: "/assets/valores/seguridad.jpg",
-    descripcion: "La seguridad de tus datos y sistemas es nuestra máxima prioridad. Implementamos los más altos estándares de ciberseguridad, desde firewalls empresariales hasta protocolos de encriptación avanzados. Realizamos auditorías regulares y mantenemos certificaciones internacionales para proteger tu información crítica.",
+    descripcion: "Actuamos con responsabilidad, ética y compromiso en cada servicio que ofrecemos. Cumplimos estándares técnicos y de atención, cuidando cada equipo y atendiendo a nuestros clientes con respeto, puntualidad y calidad en cada etapa del proceso.",
     color: "#ff3030ff"
   },
   {

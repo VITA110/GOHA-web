@@ -18,14 +18,14 @@ const contenidoSecciones = [
   {
     id: 2,
     titulo: "Nuestra Misión",
-    texto: "Empoderar a las empresas mexicanas con soluciones tecnológicas integrales que impulsen su crecimiento y competitividad. Nos especializamos en hardware empresarial, software especializado, y servicios de consultoría que transforman los desafíos tecnológicos en oportunidades de negocio. Creemos que la tecnología debe ser accesible, confiable y orientada a resultados tangibles.",
+    texto: "Somos aliados estratégicos para nuestros clientes contribuyendo a sus objetivos al proponer y entregar soluciones a sus necesidades tanto emergentes o planificadas en materia de Tecnologías de Información entre otras a nuestro alcance.",
     imagen: "/assets/nosotros/mision.jpg",
     posicion: "izquierda"
   },
   {
     id: 3,
-    titulo: "Nuestro Compromiso",
-    texto: "Nos comprometemos a ser más que un proveedor: somos su aliado estratégico en la transformación digital. Con más de 500 empresas atendidas y un equipo de especialistas certificados, garantizamos soporte técnico 24/7, capacitación continua y acompañamiento personalizado. Nuestro objetivo es que cada cliente vea en la tecnología una ventaja competitiva real y medible en su industria.",
+    titulo: "Nuestra Visión",
+    texto: "Seremos la primera referencia al momento de que nuestros clientes busquen solucionar o mejorar su día motivado por el servicio confiable, profesional y excepcional que la empresa ofrece.",
     imagen: "/assets/nosotros/compromiso.jpg",
     posicion: "derecha"
   }

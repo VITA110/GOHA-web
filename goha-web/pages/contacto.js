@@ -56,7 +56,7 @@ export default function ContactSection() {
         </svg>
       ),
       title: 'Email',
-      details: ['info@empresa.com', 'ventas@empresa.com'],
+      details: ['ventas@goha.mx'],
       link: 'mailto:info@empresa.com'
     },
     {
@@ -66,7 +66,7 @@ export default function ContactSection() {
         </svg>
       ),
       title: 'Teléfono',
-      details: ['+52 614 123 4567', '+52 614 765 4321'],
+      details: ['614 412 1803'],
       link: 'tel:+526141234567'
     },
     {
