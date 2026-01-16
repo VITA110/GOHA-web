@@ -12,7 +12,7 @@ const contenidoSecciones = [
     id: 1,
     titulo: "Nuestra Historia",
     texto: "GOHA - International Operating Solutions S.A. de C.V. es una empresa mexicana especializada en ofrecer soluciones tecnológicas integrales para la industria y los negocios. Nos enfocamos en proporcionar productos y servicios que optimizan los procesos operativos de nuestros clientes, ayudándoles a aumentar su productividad, reducir costos y adaptarse a los desafíos tecnológicos del entorno actual. Con una sólida trayectoria en el sector, trabajamos principalmente con empresas del ámbito industrial y maquilador, brindando soporte confiable y soluciones personalizadas en hardware, software, impresión, redes, señalización digital y más.",
-    imagen: "/assets/nosotros/historia.jpg",
+    imagen: "/assets/nosotros/historia-v2.jpg",
     posicion: "derecha"
   },
   {
@@ -125,6 +125,9 @@ export default function Nosotros() {
           ))}
         </div>
 
+        {/* Valores ahora va ANTES de estadísticas */}
+        <Valores />
+
         {/* Sección de estadísticas solo con iconos */}
         <section className={styles.estadisticasSection}>
           <div className={styles.estadisticasGrid}>
@@ -139,9 +142,9 @@ export default function Nosotros() {
           </div>
         </section>
       </main>
-      
-      <Valores />
-      <div style={{ height: '25vh', background: '#ffffffff' }} />
+
+      {/* Spacer pequeño para que el footer respire (antes era 25vh) */}
+      <div style={{ height: '6vh', background: '#ffffffff' }} />
 
       <Footer />
     </>
