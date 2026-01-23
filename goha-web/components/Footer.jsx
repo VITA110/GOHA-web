@@ -123,10 +123,10 @@ export default function Footer() {
             {/* Repetidos para tener 4 (mientras te pasan los otros 2 iconos) */}
             <li>
               <a
-                href="https://www.facebook.com/Goha.IOS"
+                href="https://www.tiktok.com/@goha_ios"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Facebook"
+                aria-label="TikTok"
                 className={styles.iconoRed}
               >
                 <Image src="/assets/tiktok.png" alt="TikTok" width={60} height={60} />
@@ -135,10 +135,10 @@ export default function Footer() {
 
             <li>
               <a
-                href="https://www.instagram.com/goha.ios"
+                href="https://www.linkedin.com/in/goha-international-operating-solutions-a24515367/"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Instagram"
+                aria-label="LinkedIn"
                 className={styles.iconoRed}
               >
                 <Image src="/assets/linkedin.png" alt="LinkedIn" width={60} height={60} />
@@ -188,7 +188,7 @@ export default function Footer() {
       {/* Copyright */}
       <div className={styles.copyrightWrapper}>
         <p className={styles.copyright}>
-          © 2025 GOHA - International Operating Solutions S.A. de C.V.
+          © 2015-2026 GOHA - International Operating Solutions S.A. de C.V.
         </p>
       </div>
     </footer>

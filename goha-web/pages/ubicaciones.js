@@ -15,6 +15,15 @@ const sucursales = [
     },
     {
         id: 2,
+        nombre: 'CD. Juárez, Chih.',
+        direccion: 'Av. Plutarco Elías Calles No. 1972, Col. Jardines de San José C.P. 32390.',
+        telefono: '614 412 1803',
+        horario: 'Lun - Vie: 8:00 - 18:00',
+        coordenadas: { lat: 31.740884630255582, lng: -106.31465460785937 },
+        embedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125432.56691289724!2d-106.48500340887921!3d31.751327386059305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e7432d281fd8a3%3A0x8f291d386375a182!2sGOHA%20Solutions%20Inc.!5e0!3m2!1ses!2smx!4v1754178186044!5m2!1ses!2smx'
+    },
+    {
+        id: 3,
         nombre: 'El paso, Texas.',
         direccion: '11450 James Watt Dr a5, El Paso, TX 79936, Estados Unidos.',
         telefono: '+1 915 234 9147',
