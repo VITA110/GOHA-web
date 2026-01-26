@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export default function useViewport(breakpoint = 768) {
+export default function useViewport(breakpoint = 1380) {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
