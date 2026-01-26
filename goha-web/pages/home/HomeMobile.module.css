@@ -1,0 +1,91 @@
+.mobileWrapper {
+  font-family: system-ui, sans-serif;
+  color: #111;
+}
+
+/* HEADER */
+.header {
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+/* HERO */
+.hero {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.hero span {
+  color: #c60000;
+}
+
+.hero p {
+  margin: 16px 0;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 24px;
+  background: #c60000;
+  color: white;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* SERVICIOS */
+.servicios {
+  padding: 30px 20px;
+}
+
+.servicios h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.servicios ul {
+  list-style: none;
+  padding: 0;
+}
+
+.servicios li {
+  padding: 12px;
+  margin-bottom: 10px;
+  background: #f5f5f5;
+  border-radius: 12px;
+}
+
+/* CTA FINAL */
+.ctaFinal {
+  padding: 40px 20px;
+  text-align: center;
+  background: #111;
+  color: white;
+}
+
+.boton {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 14px 24px;
+  background: #c60000;
+  color: white;
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+/* FOOTER */
+.footer {
+  padding: 16px;
+  text-align: center;
+  font-size: 0.85rem;
+  opacity: 0.6;
+}

@@ -1,68 +1,11 @@
-import { useEffect, useRef, useState } from 'react';
-import BarrasDecorativas from '@/components/BarrasDecorativas';
-import Navbar from '@/components/Navbar';
-import SloganSection from '@/components/SloganSection';
-import FraseAccion from '@/components/FraseAccion';
-import CarruselEmpresas from '@/components/CarruselEmpresas';
-import ProductosServicios from '@/components/ProductosServicios';
-import Lideres from '@/components/Lideres';
-import FraseFinal from '@/components/FraseFinal';
-import Footer from '@/components/Footer';
-import Ubicaciones from '@/components/Ubicaciones';
-import CarruselVertical from '@/components/CarruselVertical';
+"use client";
+
+import useViewport from "../hooks/useViewport";
+import HomeDesktop from "./home/HomeDesktop";
+import HomeMobile from "./home/HomeMobile";
 
 export default function Home() {
-  const sloganRef = useRef(null);
-  const [showNavbar, setShowNavbar] = useState(false);
+  const isMobile = useViewport(768);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setShowNavbar(!entry.isIntersecting);
-      },
-      { threshold: 0.1 }
-    );
-
-    if (sloganRef.current) {
-      observer.observe(sloganRef.current);
-    }
-
-    return () => {
-      if (sloganRef.current) {
-        observer.unobserve(sloganRef.current);
-      }
-    };
-  }, []);
-
-  return (
-    <>
-      {/* <BarrasDecorativas /> */}
-      <Navbar visible={showNavbar} />
-
-      <main>
-        <div ref={sloganRef}>
-          {/* <SloganSection /> */}
-          <CarruselVertical />
-
-        </div>
-        {/* <CarruselVertical /> */}
-
-        <CarruselEmpresas />
-        {/* <section id="servis"> */}
-          <ProductosServicios />
-        {/* </section> */}
-
-        {/* <div style={{ height: '25vh', background: '#ffffffff' }} /> */}
-        <Lideres />
-        {/* <div style={{ height: '25vh', background: '#ffffffff' }} /> */}
-        {/* <section id="ubi" >
-          {<Ubicaciones />}
-        </section> */}
-
-
-        <FraseFinal />
-        <Footer />
-      </main>
-    </>
-  );
+  return isMobile ? <HomeMobile /> : <HomeDesktop />;
 }
