@@ -11,7 +11,7 @@ export default function Footer() {
           src="./assets/FooterGOHA.svg"
           alt="Decoración del footer"
           width={1920}
-          height={400}
+          height={420}
           className={styles.fondoSvg}
           priority
         />
