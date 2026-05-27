@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import Navbar from '@/components/Navbar';
 import CarruselVertical from '@/components/CarruselVertical';
 import CarruselEmpresas from '@/components/CarruselEmpresas';
+import BotonCatalogo from '@/components/BotonCatalogo';
 import ProductosServicios from '@/components/ProductosServicios';
 import Lideres from '@/components/Lideres';
 import FraseFinal from '@/components/FraseFinal';
@@ -35,9 +36,11 @@ export default function HomeDesktop() {
       <main>
         <div ref={sloganRef}>
           <CarruselVertical />
+
         </div>
 
         <CarruselEmpresas />
+        <BotonCatalogo />
         <ProductosServicios />
         <Lideres />
         <FraseFinal />

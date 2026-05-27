@@ -19,18 +19,13 @@ const empresas = [
   { logo: '/logos/actualizados/Lenovo.svg', nombre: 'Lenovo', pdf: '' },
   { logo: '/logos/actualizados/Lexmark-logo.svg', nombre: 'Lexmark', pdf: '' },
   { logo: '/logos/actualizados/Logitech_logo.svg', nombre: 'Logitech', pdf: '' },
-  { logo: '/logos/actualizados/HV.svg', nombre: 'HIK VISION', pdf: '' },
+  { logo: '/logos/actualizados/HV.svg', nombre: 'HIK VISION'},
   
 ];
 export default function CarruselEmpresas() {
   const descargarPDF = (pdfUrl, nombreEmpresa) => {
     // Crear un elemento <a> temporal
-    const link = document.createElement('a');
-    link.href = pdfUrl;
-    link.download = `catalogo-${nombreEmpresa.toLowerCase()}.pdf`;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    
   };
 
   return (
@@ -79,6 +74,7 @@ export default function CarruselEmpresas() {
                 className={styles.logo} 
               />
             </div>
+            
           ))}
         </div>
       </div>
