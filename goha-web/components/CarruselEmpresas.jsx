@@ -3,23 +3,25 @@ import Image from 'next/image';
 
 // Mapeo de logos a sus respectivos PDFs
 const empresas = [
-  { logo: 'logos/Microsoft.svg', nombre: 'Microsoft', pdf: '/catalogos/microsoft-catalogo.pdf' },
-  { logo: 'logos/HP.svg', nombre: 'HP', pdf: '/catalogos/hp-catalogo.pdf' },
-  { logo: 'logos/Adobe.svg', nombre: 'Adobe', pdf: '/catalogos/adobe-catalogo.pdf' },
+  { logo: 'logos/Microsoft.svg', nombre: 'Microsoft', pdf: '' },
+  { logo: 'logos/HP.svg', nombre: 'HP', pdf: '' },
+  { logo: 'logos/Adobe.svg', nombre: 'Adobe', pdf: '' },
   { logo: '/logos/actualizados/DELLg.svg', nombre: 'Dell', pdf: '' },
   { logo: '/logos/actualizados/elo.png', nombre: 'ELO TOUCH', pdf: '' },
   { logo: '/logos/actualizados/EC.svg', nombre: 'Epcom', pdf: '' },
   { logo: '/logos/actualizados/HWac.svg', nombre: 'Honeywell', pdf: '' },
-  { logo: 'logos/Zebra.svg', nombre: 'Zebra', pdf: '/catalogos/zebra-catalogo.pdf' },
-  { logo: 'logos/Intel.svg', nombre: 'Intel', pdf: '/catalogos/intel-catalogo.pdf' },
-  { logo: 'logos/Cisco.svg', nombre: 'Cisco', pdf: '/catalogos/cisco-catalogo.pdf' },
-  { logo: 'logos/Autodesk_Logo.svg', nombre: 'Asus', pdf: '/catalogos/cisco-catalogo.pdf' },
+  { logo: 'logos/Zebra.svg', nombre: 'Zebra', pdf: '' },
+  { logo: 'logos/Intel.svg', nombre: 'Intel', pdf: '' },
+  { logo: 'logos/Cisco.svg', nombre: 'Cisco', pdf: '' },
+  { logo: 'logos/Autodesk_Logo.svg', nombre: 'Asus', pdf: '' },
   { logo: '/logos/actualizados/APC-logo.png', nombre: 'APC', pdf: '' },
   { logo: '/logos/actualizados/Brother_logo.svg', nombre: 'Brother', pdf: '' },
   { logo: '/logos/actualizados/Lenovo.svg', nombre: 'Lenovo', pdf: '' },
   { logo: '/logos/actualizados/Lexmark-logo.svg', nombre: 'Lexmark', pdf: '' },
   { logo: '/logos/actualizados/Logitech_logo.svg', nombre: 'Logitech', pdf: '' },
-  { logo: '/logos/actualizados/HV.svg', nombre: 'HIK VISION'},
+  { logo: '/logos/actualizados/HV.svg', nombre: 'HIK VISION', pdf: '' },
+  { logo: '/logos/actualizados/RAM-Logo.png', nombre: 'RAM MOUNTS', pdf: '' },
+  { logo: '/logos/actualizados/aomei-logo3.png', nombre: 'AOMEI', pdf: '' }
   
 ];
 export default function CarruselEmpresas() {
